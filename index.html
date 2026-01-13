@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AADHAR - XIV - Jumanji Tech Event</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;800&family=Rye&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+    <video class="bg-video" autoplay loop muted playsinline>
+        <source src="./bg-video2.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+    <div class="fog-layer"></div>
+    <div class="vine-container"></div>
+    <div id="leaf-container"></div>
+
+    <nav>
+        <div class="logo" onclick="navigateTo('home')">
+            <div class="logo-avatar">
+                <img src="./aadhar 14.png" alt="AADHAR XIV Logo">
+            </div>
+            <span class="logo-text">AADHAR XIV</span>
+        </div>
+
+
+        <div class="nav-links">
+            <a onclick="navigateTo('home')" class="active" data-target="home">Home</a>
+            <a onclick="navigateTo('events')" data-target="events">Levels</a>
+            <a onclick="navigateTo('about')" data-target="about">The Legend</a>
+            <a onclick="navigateTo('team')" data-target="team">Guardians</a>
+            <a onclick="navigateTo('register')" data-target="register">Enter The Game</a>
+            <a onclick="navigateTo('contact')" data-target="contact">Signal</a>
+        </div>
+
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i data-lucide="menu"></i>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a onclick="navigateTo('home')">Home</a>
+        <a onclick="navigateTo('events')">Levels</a>
+        <a onclick="navigateTo('about')">The Legend</a>
+        <a onclick="navigateTo('team')">Guardians</a>
+        <a onclick="navigateTo('register')">Enter The Game</a>
+        <a onclick="navigateTo('contact')">Signal</a>
+    </div>
+
+    <main id="content">
+
+        <!-- HOME -->
+        <section id="home" class="page active">
+            <div class="hero-content">
+                <h2 class="sub-title">ZIRCON CLUB PRESENTS</h2>
+                <h1 class="main-title">AADHAR- X I V</h1>
+                <p class="hero-text">THE JUNGLE IS CALLING. DO YOU DARE TO ENTER?</p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="navigateTo('register')">ENTER THE GAME</button>
+                    <button class="btn-secondary" onclick="navigateTo('about')">READ THE RULES</button>
+                </div>
+            </div>
+
+            <div style="padding:3rem 0;">
+                <h2 style="font-size:3rem; color:var(--color-primary); text-align:center; margin-bottom:1rem; text-shadow:0 0 4px var(--color-primary); ">AADHAR - X I V   -   THE GAME BEGINS IN</h2>
+
+                <div class="countdown-container" aria-live="polite">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">DAYS</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">HOURS</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">MINUTES</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">SECONDS</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div style="margin:4rem 0; padding:2rem; max-width:1100px; margin-left:auto; margin-right:auto;">
+                <h2 style="font-size:3rem; color:var(--color-primary); text-align:center; margin-bottom:3rem; text-shadow:0 0 4px var(--color-primary);">AADHAR - X I V</h2>
+                <div style="display: grid; grid-template-columns: 2fr 2fr; gap: 4rem;">
+                    <div style="background: rgba(0,0,0,0.6); padding:1.5rem; border:2px solid #065f46;">
+                        <h3 style="color:#fbbf24; margin-bottom:1rem;">BORN IN 2007</h3>
+                        <p style="color:#a7f3d0; line-height:1.6; font-size: larger;">Launched by the Zircon Club with a vision to enhance every talent. AADHAR has been fostering cooperation, teamwork, and excellence among Poornima students for over a decade.A platform where every talent finds its stage and every student proves their worth</p>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.6); padding:1.5rem; border:2px solid #065f46;">
+                        <h3 style="color:#fbbf24; margin-bottom:1rem;">YOUR PLATFORM</h3>
+                        <p style="color:#a7f3d0; line-height:1.6;font-size: larger;">brings multiple levels from hackathon to e-sports tournament,treasure-hunt to Robo wars - this is where first-year students implement their academic knowledge and showcase real world skills. Your talent, Your Stage and your Moments</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin:10rem 0;">
+                <h2 class="section-header">THE LEVELS AWAIT</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <span class="event-type">ROBOTICS</span>
+                        <h3>ROBO WAR</h3>
+                        <p>Battle bots in the arena of champions.</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openEventPopup('roboWar')">
+  Explore
+</button>
+button>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-type">ROBOTICS</span>
+                        <h3>ROBO SOCCER</h3>
+                        <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openExplore('BUG HUNT', 'Fix buggy code under time pressure and win glory.')">Explore</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-type">FLYING</span>
+                        <h3>HOVERCRAFT</h3>
+                        <p>Build a hovercraft and complete in a thrilling race</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openExplore('ROBO RACE', 'Bring your fastest bot — speed and stability matter.')">Explore</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-type">DEBUGGING</span>
+                        <h3>CAPTURE THE FLAG</h3>
+                        <p>Capture the flag in this stragetic game!</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openExplore('COSMO CLASH', 'Compete in squads across galactic arenas.')">Explore</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-type">ADVENTURE</span>
+                        <h3>TREASURE HUNT</h3>
+                        <p>Solve riddles and find hidden treasures.</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openExplore('TREASURE HUNT', 'Crack clues around campus to win prizes.')">Explore</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <span class="event-type">COMPETITION</span>
+                        <h3>OPEN iNNOVATION</h3>
+                        <p>Bring your innovative ideas to life in this creative competition!</p>
+                        <div style="display:flex; gap:10px;">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openExplore('VALORANT', 'Bring your squad for tactical combat.')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGISTER -->
+        
+<!--                 
+
+        <script>
+          function showPoornimaOrOther() {
+            const sel = document.getElementById('collegeSelect');
+            document.getElementById('poornimaFields').style.display = sel.value === 'Poornima' ? 'grid' : 'none';
+            document.getElementById('otherCollegeFields').style.display = sel.value === 'Other' ? 'grid' : 'none';
+          }
+        
+          function showHostelField() {
+            const res = document.getElementById('residence');
+            const wrap = document.getElementById('hostelNameWrap');
+            if (!res) return;
+            wrap.style.display = res.value === 'Hostel' ? 'block' : 'none';
+          }
+        
+          function renderParticipantFields() {
+            const sel = document.getElementById('eventSelect');
+            const container = document.getElementById('participantsContainer');
+            container.innerHTML = '';
+            if (!sel) return;
+            const opt = sel.selectedOptions[0];
+            const total = parseInt(opt?.dataset?.members || '1', 10);
+            if (isNaN(total) || total <= 1) {
+              const p = document.createElement('p'); p.style.color='var(--color-text-muted)'; p.textContent='Solo event — only leader required.'; container.appendChild(p); return;
+            }
+            const remaining = total - 1;
+            const info = document.createElement('p'); info.style.color='var(--color-text-muted)'; info.textContent = `This event requires ${total} members. Enter ${remaining} member${remaining>1?'s':''} details below.`; container.appendChild(info);
+            for (let i=1;i<=remaining;i++){
+              const idx = i+1;
+              const box = document.createElement('div'); box.style.marginTop='.6rem';
+              box.innerHTML = `
+                <h4 style="margin:.4rem 0 .2rem;">Member ${idx}</h4>
+                <div class="form-group"><label>Name</label><input name="member${idx}Name" type="text" required></div>
+                <div class="form-group"><label>Contact</label><input name="member${idx}Contact" type="text" required></div>
+                <div class="form-group"><label>Email</label><input name="member${idx}Email" type="email"></div>
+              `;
+              container.appendChild(box);
+            }
+          }
+        
+          function collectFormData(form) {
+            const fd = new FormData(form); const obj = {}; for (const [k,v] of fd.entries()) obj[k]=v;
+            const participants = [];
+            participants.push({ role:'Leader', name: obj.leaderName||'', gender: obj.leaderGender||'', contact: obj.leaderContact||'', email: obj.leaderEmail||'' });
+            Object.keys(obj).forEach(k=>{ const m=k.match(/^member(\d+)Name$/); if(m){ const idx=m[1]; participants.push({ role:`Member ${idx}`, name: obj[`member${idx}Name`]||'', contact: obj[`member${idx}Contact`]||'', email: obj[`member${idx}Email`]||'' }); }});
+            return { meta: obj, participants };
+          }
+        
+          async function handleRegisterSubmit(e){
+            e.preventDefault();
+            const form = document.getElementById('registrationForm');
+            const btn = document.getElementById('registerBtn');
+            btn.disabled = true; btn.textContent = 'SUBMITTING...';
+            const sel = document.getElementById('eventSelect'); if(!sel.value){ alert('Select an event'); btn.disabled=false; btn.textContent='Submit Registration'; return; }
+            const data = collectFormData(form);
+            await new Promise(r=>setTimeout(r,700));
+            let summary = `EVENT: ${sel.value}\n\nParticipants:\n`; data.participants.forEach((p,i)=>{ summary += `${i+1}. ${p.role} — ${p.name} — ${p.email||'n/a'} — ${p.contact||'n/a'}\n`; });
+            summary += `\nCOLLEGE: ${form.college?.value||'N/A'}\n`;
+            if(form.college?.value==='Poornima'){ summary += `Residence: ${form.residence?.value||'N/A'}\n`; if(form.residence?.value==='Hostel') summary += `Hostel: ${form.hostelName?.value||'N/A'}\n`; summary += `Reg No: ${form.regNo?.value||'N/A'}\n`; }
+            if(form.college?.value==='Other'){ summary += `College Name: ${form.otherCollegeName?.value||'N/A'}\nCollege Address: ${form.otherCollegeAddress?.value||'N/A'}\nNOC Uploaded: ${form.noc?.files?.length?form.noc.files[0].name:'No'}\n`; }
+            alert('REGISTRATION SUBMITTED\n\n'+summary);
+            form.reset(); renderParticipantFields(); showPoornimaOrOther(); showHostelField();
+            btn.disabled=false; btn.textContent='Submit Registration';
+            navigateTo && navigateTo('home');
+          }
+        
+          document.addEventListener('DOMContentLoaded',()=>{
+            const ev = document.getElementById('eventSelect'); ev&& (ev.addEventListener('change',renderParticipantFields), renderParticipantFields());
+            const cs = document.getElementById('collegeSelect'); cs&& (cs.addEventListener('change',showPoornimaOrOther), showPoornimaOrOther());
+            const res = document.getElementById('residence'); res&& (res.addEventListener('change',showHostelField), showHostelField());
+            const form = document.getElementById('registrationForm'); form&& form.addEventListener('submit',handleRegisterSubmit);
+            const resetBtn = document.getElementById('resetBtn'); resetBtn&& resetBtn.addEventListener('click',()=>{ form.reset(); renderParticipantFields(); showPoornimaOrOther(); showHostelField(); });
+          });
+        </script>
+        ...existing code... -->
+        <!-- ```// filepath: d:\(coding)Dhruv\AADHAR\JumanjiAadhar-main\JumanjiAadhar-main\client\public\vanilla\index.html -->
+        <!-- ...existing code... -->
+        <section id="register" class="page">
+            <h1 class="comingsoon" style="text-align: center;margin-top: 230px; color: #ffdc41;">REGISTRATION COMING SOON...</h1>
+            <button class="btn-primary" style="display: block; margin: 20px auto;" onclick="navigateTo('events')">BACK TO LEVELS</button>
+          <!-- <div style="max-width:900px;margin:0 auto;background:rgba(0,0,0,0.85);border:1px solid #065f46;padding:2.5rem;">
+            <h2 style="color:var(--color-primary);text-align:center;font-size:2rem;margin-bottom:1rem;">ENTER THE GAME</h2>
+            <p style="text-align:center;color:var(--color-text-muted);margin-bottom:1rem;">Select event, fill leader & college details. Member fields appear per event.</p>
+        
+            <form id="registrationForm" enctype="multipart/form-data">
+              <div style="display:grid;gap:1rem;">
+        
+                <label>Interested Event</label>
+                <select id="eventSelect" name="event" required>
+                  <option value="">-- Select an event --</option>
+                  <option value="ROBO WAR" data-members="10">ROBO WAR — 10 members</option>
+                  <option value="ROBO SOCCER" data-members="5">ROBO SOCCER — 5 members</option>
+                  <option value="R.C. CAR" data-members="4">R.C. CAR — 4 members</option>
+                  <option value="OPEN INNOVATION" data-members="5">OPEN INNOVATION — 5 members</option>
+                  <option value="TECH QUIZ" data-members="1">TECH QUIZ — Solo</option>
+                  <option value="FLASH DESIGN" data-members="1">FLASH DESIGN — Solo</option>
+                  <option value="24 HOUR HACKATHON" data-members="4">24 HOUR HACKATHON — 4 members</option>
+                  <option value="ROBO RACE" data-members="3">ROBO RACE — 3 members</option>
+                  <option value="COSMO CLASH" data-members="5">COSMO CLASH — 5 members</option>
+                  <option value="TREASURE HUNT" data-members="4">TREASURE HUNT — 4 members</option>
+                  <option value="VALORANT" data-members="5">VALORANT — 5 members</option>
+                </select>
+        
+                <h3>Leader (required)</h3>
+                <div style="display:grid;gap:.5rem;">
+                  <div class="form-group"><label>Name</label><input id="leaderName" name="leaderName" type="text" required></div>
+                  <div class="form-group"><label>Gender</label><select id="leaderGender" name="leaderGender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+                  <div class="form-group"><label>Contact</label><input id="leaderContact" name="leaderContact" type="text" required></div>
+                  <div class="form-group"><label>Email</label><input id="leaderEmail" name="leaderEmail" type="email" required></div>
+                </div>
+        <h3>College</h3>
+ <label>College</label>
+ <select id="collegeSelect" name="college" required onchange="showQR()">
+  <option value="">-- Select --</option>
+  <option value="Poornima">Poornima</option>
+  <option value="Other">Other</option>
+ </select>
+
+
+
+ <script>
+ function showQR() {
+    var college = document.getElementById("collegeSelect").value;
+    var qr = document.getElementById("qrSection");
+
+    if (college === "Other") {
+        qr.style.display = "block";  // show QR section
+    } else {
+        qr.style.display = "none";   // hide QR section
+    }
+ }
+  </script>
+
+        
+                <div id="poornimaFields" style="display:none;gap:.5rem;">
+                  <div class="form-group"><label>Residence</label>
+                    <select id="residence" name="residence">
+                      <option value="">Select</option>
+                      <option value="Hostel">Hostel</option>
+                      <option value="Day Scholar">Day Scholar</option>
+                    </select>
+                  </div>
+                  <div id="hostelNameWrap" class="form-group" style="display:none;"><label>Hostel Name</label><input name="hostelName" type="text"></div>
+                  <div class="form-group"><label>College Reg. No.</label><input name="regNo" type="text"></div>
+                </div>
+        
+                <div id="otherCollegeFields" style="display:none;gap:.5rem;">
+                  <div class="form-group"><label>College Name</label><input name="otherCollegeName" type="text"></div>
+                  <div class="form-group"><label>College Address</label><input name="otherCollegeAddress" type="text"></div>
+                  <div class="form-group"><label>Upload NOC (PDF)</label><input name="noc" id="noc" type="file" accept=".pdf"></div>
+                </div>
+        
+                <h3>Details of Participants (Team Information)</h3>
+                <div id="participantsContainer" aria-live="polite"></div>
+        QR + Payment Section (Initially Hidden)
+ <div id="qrSection" style="display:none; margin-top:15px; padding:15px; width:800px;">
+    <h4>Scan & Pay</h4>
+
+    QR Code
+    <img src="WhatsApp Image 2025-12-06 at 00.25.34.jpeg" alt="QR Code" width="200" height="200"><br><br>
+
+    Upload Screenshot
+    <label for="payment_screenshot">Upload Payment Screenshot:</label><br>
+    <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*"><br><br>
+
+    Transaction ID
+    <label for="transaction_id">Enter Transaction ID:</label><br>
+    <input type="text" id="transaction_id" name="transaction_id" placeholder="Enter transaction ID"><br><br>
+ </div>
+
+                <div style="display:flex;gap:.75rem;justify-content:flex-end;margin-top:.5rem;">
+                  <button id="resetBtn" type="button" style="padding:.6rem 1rem;background:transparent;border:1px solid #064e3b;color:var(--color-text);">Reset</button>
+                  <button id="registerBtn" type="submit" style="padding:.6rem 1rem;background:linear-gradient(90deg,var(--color-primary),#d97706);border:none;color:#000;font-weight:700;">Submit Registration</button>
+                </div>
+        
+            
+            </form>
+          </div> -->
+        </section>
+        
+        <!-- <script>
+          function showPoornimaOrOther() {
+            const sel = document.getElementById('collegeSelect');
+            document.getElementById('poornimaFields').style.display = sel.value === 'Poornima' ? 'grid' : 'none';
+            document.getElementById('otherCollegeFields').style.display = sel.value === 'Other' ? 'grid' : 'none';
+          }
+        
+          function showHostelField() {
+            const res = document.getElementById('residence');
+            const wrap = document.getElementById('hostelNameWrap');
+            if (!res) return;
+            wrap.style.display = res.value === 'Hostel' ? 'block' : 'none';
+          }
+        
+          function renderParticipantFields() {
+            const sel = document.getElementById('eventSelect');
+            const container = document.getElementById('participantsContainer');
+            container.innerHTML = '';
+            if (!sel) return;
+            const opt = sel.selectedOptions[0];
+            const total = parseInt(opt?.dataset?.members || '1', 10);
+            if (isNaN(total) || total <= 1) {
+              const p = document.createElement('p'); p.style.color='var(--color-text-muted)'; p.textContent='Solo event — only leader required.'; container.appendChild(p); return;
+            }
+            const remaining = total - 1;
+            const info = document.createElement('p'); info.style.color='var(--color-text-muted)'; info.textContent = `This event requires ${total} members. Enter ${remaining} member${remaining>1?'s':''} details below.`; container.appendChild(info);
+            for (let i=1;i<=remaining;i++){
+              const idx = i+1;
+              const box = document.createElement('div'); box.style.marginTop='.6rem';
+              box.innerHTML = `
+                <h4 style="margin:.4rem 0 .2rem;">Member ${idx}</h4>
+                <div class="form-group"><label>Name</label><input name="member${idx}Name" type="text" required></div>
+                <div class="form-group"><label>Contact</label><input name="member${idx}Contact" type="text" required></div>
+                <div class="form-group"><label>Email</label><input name="member${idx}Email" type="email"></div>
+              `;
+              container.appendChild(box);
+            }
+          }
+        
+          function collectFormData(form) {
+            const fd = new FormData(form); const obj = {}; for (const [k,v] of fd.entries()) obj[k]=v;
+            const participants = [];
+            participants.push({ role:'Leader', name: obj.leaderName||'', gender: obj.leaderGender||'', contact: obj.leaderContact||'', email: obj.leaderEmail||'' });
+            Object.keys(obj).forEach(k=>{ const m=k.match(/^member(\d+)Name$/); if(m){ const idx=m[1]; participants.push({ role:`Member ${idx}`, name: obj[`member${idx}Name`]||'', contact: obj[`member${idx}Contact`]||'', email: obj[`member${idx}Email`]||'' }); }});
+            return { meta: obj, participants };
+          }
+        
+          async function handleRegisterSubmit(e){
+            e.preventDefault();
+            const form = document.getElementById('registrationForm');
+            const btn = document.getElementById('registerBtn');
+            btn.disabled = true; btn.textContent = 'SUBMITTING...';
+            const sel = document.getElementById('eventSelect'); if(!sel.value){ alert('Select an event'); btn.disabled=false; btn.textContent='Submit Registration'; return; }
+            const data = collectFormData(form);
+            await new Promise(r=>setTimeout(r,700));
+            let summary = `EVENT: ${sel.value}\n\nParticipants:\n`; data.participants.forEach((p,i)=>{ summary += `${i+1}. ${p.role} — ${p.name} — ${p.email||'n/a'} — ${p.contact||'n/a'}\n`; });
+            summary += `\nCOLLEGE: ${form.college?.value||'N/A'}\n`;
+            if(form.college?.value==='Poornima'){ summary += `Residence: ${form.residence?.value||'N/A'}\n`; if(form.residence?.value==='Hostel') summary += `Hostel: ${form.hostelName?.value||'N/A'}\n`; summary += `Reg No: ${form.regNo?.value||'N/A'}\n`; }
+            if(form.college?.value==='Other'){ summary += `College Name: ${form.otherCollegeName?.value||'N/A'}\nCollege Address: ${form.otherCollegeAddress?.value||'N/A'}\nNOC Uploaded: ${form.noc?.files?.length?form.noc.files[0].name:'No'}\n`; }
+            alert('REGISTRATION SUBMITTED\n\n'+summary);
+            form.reset(); renderParticipantFields(); showPoornimaOrOther(); showHostelField();
+            btn.disabled=false; btn.textContent='Submit Registration';
+            navigateTo && navigateTo('home');
+          }
+        
+          document.addEventListener('DOMContentLoaded',()=>{
+            const ev = document.getElementById('eventSelect'); ev&& (ev.addEventListener('change',renderParticipantFields), renderParticipantFields());
+            const cs = document.getElementById('collegeSelect'); cs&& (cs.addEventListener('change',showPoornimaOrOther), showPoornimaOrOther());
+            const res = document.getElementById('residence'); res&& (res.addEventListener('change',showHostelField), showHostelField());
+            const form = document.getElementById('registrationForm'); form&& form.addEventListener('submit',handleRegisterSubmit);
+            const resetBtn = document.getElementById('resetBtn'); resetBtn&& resetBtn.addEventListener('click',()=>{ form.reset(); renderParticipantFields(); showPoornimaOrOther(); showHostelField(); });
+          });
+        </script> -->
+
+
+        <!-- ABOUT -->
+        <section id="about" class="page">
+            <h1 class="section-header">THE LEGEND OF AADHAR</h1>
+            <div style="max-width:900px; margin:0 auto; padding:2rem; background: rgba(0,0,0,0.6); border-left:4px solid var(--color-primary);">
+                <h2 style="color:#fbbf24; font-size:1.5rem; margin-bottom:1.5rem;">ABOUT AADHAR</h2>
+                <p style="color:#a7f3d0; line-height:1.8; margin-bottom:2rem; font-size: 1.2rem;">
+                    The Zircon Club launched AADHAR with the goal of enhancing each person's entire talents. Every talent needs a platform, and AADHAR is that opportunity. What began in 2007 as a vision to foster cooperation and teamwork among Poornima students has grown into one of the most celebrated annual initiatives on campus.
+                </p>
+
+                <h2 style="color:#fbbf24; font-size:1.5rem; margin-bottom:1.5rem;">OUR MISSION</h2>
+                <p style="color:#a7f3d0; line-height:1.8; margin-bottom:2rem;font-size: 1.2rem;">
+                   AADHAR provides a platform where every student can showcase their skills and talents. We give first-year students the opportunity to implement their academic knowledge in real-world settings. Through the dedication and commitment of the Zircon Club, AADHAR has become an essential festival for Poornima students to compete, collaborate, and celebrate their abilities.
+                </p>
+
+                <div class="info-grid" style="margin-top:2rem;">
+                    <div class="info-box">
+                        <h3>EXPLORE</h3>
+                        <p>Discover new technologies in our workshops.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>SURVIVE</h3>
+                        <p>Outlast opponents in competitive gaming.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>CONQUER</h3>
+                        <p>Win grand prizes in the main hackathon.</p>
+                    </div>
+                </div>
+        </section>
+
+       <!-- EVENTS (detailed list) -->
+        <section id="events" class="page">
+  <h1 class="section-header">CHOOSE YOUR LEVEL</h1>
+<section >
+  <!-- ALL CLUB HEADERS + events-grid GO INSIDE HERE -->
+
+  <div class="levels-wrapper">
+      <!-- Zircon Club -->
+      <h2 class="group-header">Zircon Club</h2>
+      <!-- robo soccer start-->
+      <div class="events-grid">
+          <div class="event-card">
+              <span class="event-type">ROBOTICS</span>
+              <h3>ROBO SOCCER</h3>
+              <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
+              <p class="members">Members: 5</p>
+              <div style="display:flex; gap:10px;">
+                  <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                  <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
+                </div>
+            </div>
+            
+            <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
+            <template id="roboSoccerTemplate">
+                
+                <div class="popup-left">
+                    
+                    <h2>ROBO SOCCER</h2>
+                    <p>A thrilling robotic football challenge where your bot pushes, hits, and scores goals with precision & power!</p>
+                    
+                    <h3>TEAM COMPOSITIONS</h3>
+                    <ul>
+                        <li>Each team should contain 3-5 members.</li>
+                        <li>Only one bot per team is allowed.</li>
+                        <li>Only one team member may control the robot during a match.</li>
+                        <li>Each team leader must assign one team leader for official communication.</li>
+                    </ul>
+                    
+                    <h3>MATCH STRUCTURE (Rounds)</h3>
+                    <ul>
+                        <li>Robots must be wireless controlled.</li>
+                        <li>Robots must fit within <strong>30 × 30 × 30 cm³</strong>.</li>
+                        <li>Use of liquids, fire, or projectiles is strictly prohibited.</li>
+                        <li>Robots must be powered by onboard batteries only.</li>
+                    </ul>
+                    
+                    <h3>ROBOT SPECIFICATIONS</h3>
+                    <ul>
+                        <strong>ROUND 1 – QUALIFYING ROUND</strong>
+                        <li>All teams compete in league or knockout form.</li>
+                        <li>Matches are scheduled by organizers.</li>
+                        <li>Teams earn points based on match results.</li>
+                        
+                        <strong>ROUND 3 – FINALS</strong>
+                        <li>Winners of semifinals compete.</li>
+                        <li>Matches decide 1<sup>st</sup> and 2<sup>nd</sup> places.</li>
+                    </ul>
+                    
+                    <h3>SCORING SYSTEM</h3>
+                    <ul>
+                        <li>Each goal scored = 10 points.</li>
+                        <li>Team with highest score wins.</li>
+                        <li>In case of tie, extra 2 minutes will be given.</li>
+                    </ul>
+                    
+                    <h3>PENALTIES</h3>
+                    <table>
+                        <tr>
+                            <th>VIOLATION</th>
+                            <th>PENALTY</th>
+                        </tr>
+                        <tr>
+                            <td>Manual touch (1st time)</td>
+                            <td>2 points</td>
+                        </tr>
+                        <tr>
+                            <td>Manual touch (2nd time)</td>
+                            <td>5 points</td>
+                        </tr>
+                        <tr>
+                            <td>Intentional blocking of goal area</td>
+                            <td>5 points</td>
+                        </tr>
+                        <tr>
+                            <td>Intentional damage to goal course (1st time)</td>
+                            <td>2 points</td>
+                        </tr>
+                        <tr>
+                            <td>Intentional damage to goal course (2nd time)</td>
+                            <td>5 points</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>GENERAL RULES</h3>
+                    <ul>
+                        <li>Robots must pass inspection before the match.</li>
+                        <li>No robot replacement during a match.</li>
+                        <li>Judges’ decisions are final.</li>
+                        <li>Final decision rests with organizers.</li>
+                    </ul>
+                    
+                    <div class="popup-buttons">
+                        <button class="popup-btn" onclick="closeRoboSoccer()">Close</button>
+                        <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+                    </div>
+                </div>
+                
+                <!-- RIGHT IMAGE -->
+                <div class="popup-right">
+                    <img src="./event/robosoccer.jpeg" alt="Robo Soccer">
+                </div>
+                
+            </template>
+            
+            <!-- ✅ REQUIRED OVERLAY (ONE TIME ONLY) -->
+            <div id="roboSoccerPopup" class="jumanji-overlay"></div>
+            <!-- robo soccer end -->
+            
+            
+            <!-- robo war start--> 
+            <!-- ========== POPUP OVERLAY ========== -->
+            <div id="roboSoccerPopup" class="jumanji-overlay"></div>
+            
+            <div class="event-card">
+                <span class="event-type">ROBOTICS</span>
+                <h3>ROBO WAR</h3>
+                <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
+                <p class="members">Members: 15</p>
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openRoboWar()">Explore</button>
+                </div>
+            </div>
+            <template id="roboWarTemplate">
+
+    <div class="popup-left">
+
+        <h2>ROBO WAR</h2>
+        <p>
+            A brutal robotic combat event where machines clash head-on in an arena of destruction.
+            Design, build, and battle your robot to prove ultimate dominance.
+        </p>
+
+        <h3>TEAM COMPOSITION</h3>
+        <ul>
+            <li>Each team may consist of 5 – 10 members.</li>
+            <li>Only one robot is allowed per team.</li>
+            <li>Each team must assign one leader for official communication.</li>
+        </ul>
+
+        <h3>ROBOT SPECIFICATIONS</h3>
+        <ul>
+            <li>Maximum robot dimensions: <strong>45 × 45 × 45 cm</strong>.</li>
+            <li>Robot must be wireless controlled.</li>
+            <li>Robots must be powered only by onboard batteries.</li>
+            <li>Use of liquids, fire, explosives, or projectiles is strictly prohibited.</li>
+            <li>Sharp edges and rotating weapons are allowed within safety limits.</li>
+        </ul>
+
+        <h3>ROUNDS STRUCTURE</h3>
+        <ul>
+            <strong>ROUND 1 – QUALIFYING ROUND</strong>
+            <li>All teams participate in knockout matches.</li>
+            <li>Match duration: 3 minutes.</li>
+
+            <strong>ROUND 2 – SEMI FINALS</strong>
+            <li>Top teams qualify based on performance.</li>
+            <li>Higher aggression and control are evaluated.</li>
+
+            <strong>ROUND 3 – FINALS</strong>
+            <li>Final combat determines 1<sup>st</sup> and 2<sup>nd</sup> positions.</li>
+        </ul>
+
+        <h3>SCORING CRITERIA</h3>
+        <ul>
+            <li>Damage inflicted on opponent robot.</li>
+            <li>Control and mobility during combat.</li>
+            <li>Aggressiveness and strategy.</li>
+        </ul>
+
+        <h3>PENALTIES</h3>
+        <table>
+            <tr>
+                <th>VIOLATION</th>
+                <th>PENALTY</th>
+            </tr>
+            <tr>
+                <td>Manual interference</td>
+                <td>Warning / Disqualification</td>
+            </tr>
+            <tr>
+                <td>Leaving arena repeatedly</td>
+                <td>Point deduction</td>
+            </tr>
+            <tr>
+                <td>Unsafe weapon usage</td>
+                <td>Immediate disqualification</td>
+            </tr>
+        </table>
+
+        <h3>GENERAL RULES</h3>
+        <ul>
+            <li>Robots must pass inspection before the match.</li>
+            <li>No robot replacement during a match.</li>
+            <li>Judges’ decisions are final and binding.</li>
+            <li>Organizers reserve the right to modify rules.</li>
+        </ul>
+
+        <h3>WINNER DECLARATION</h3>
+        <ul>
+            <li>Winner is decided based on knockout victories.</li>
+            <li>In case of tie, an extra round will be conducted.</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeRoboWar()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/robowar.jpeg" alt="Robo War">
+    </div>
+
+</template>
+
+<!-- POPUP OVERLAY -->
+<div id="roboWarPopup" class="jumanji-overlay"></div>
+
+            <!-- robo war end-->
+            
+            
+            <!-- rc car start-->
+            <div class="event-card">
+                <span class="event-type">ROBOTICS</span>
+                <h3>R.C CAR</h3>
+                <p>Design and race your own remote-controlled car. Speed, precision, and control are key!</p>
+                <p class="members">Members: 4</p>
+                
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openRCCar()">Explore</button>
+                </div>
+            </div>
+            <template id="rcCarTemplate">
+                
+                <div class="popup-left">
+                    
+                    <h2>R.C CAR</h2>
+                    <p>A high-speed remote-controlled racing challenge where engineering, balance, and control decide the winner.</p>
+                    
+                    <h3>TEAM COMPOSITION</h3>
+                    <ul>
+                        <li>Each team should consist of 2 - 4 members.</li>
+                        <li>Only one bot per team is allowed.</li>
+                        <li>Each team should appoint one team leader for communicatio with judges.</li>
+                    </ul>
+                    
+                    <h3>ROBOT SPECIFICATIONS</h3>
+                    <ul>
+                        <li>The robot must be battery operated.</li>
+                        <li>Maximum bot dimensions: <strong>30 × 30 × 30 cm</strong></li>
+                        <li>Robots must be wireless controlled.</li>
+                        <li>It should not contain any harmful components like fire, water, sharp blades etc.</li>
+                    </ul>
+                    
+                    <h3>ROUNDS STRUCTURE</h3>
+                    <ul>
+                        <strong>ROUND 1 – QUALIFYING ROUND</strong>
+                        <li>All teams participate.</li>
+                        <li>Objective : Complete the track in minimum time..</li>
+                        <li>Top 8 teams qualify for next round based on time and penalties.</li>
+                        <strong> ROUND 2 - SEMI - FINAL ROUND</strong>
+                        <li>Increased difficulty (additional obstacles on tighter turns).</li>
+                        <li>Only qualified teams can participate.</li>
+                        <li>Best 4 teams moves to final round.</li>
+                        <strong>ROUND 3 – FINALS</strong>
+                        <li>Most challenging track.</li>
+                        <li>Winners is decided based on time + penalties.</li>
+                    </ul>
+                    
+                    <h3>TIMES PER ROUND</h3>
+                    <ul>
+                        <li>Maximum time per round = 8 minutes.</li>
+                        <li>If the bot fails to complete within the given time, the team will be disqualified for that round..</li>
+                        <li>Time starts when bot crosses the start line and stops when it crosses the finish line.</li>
+                    </ul>
+                    
+                    <h3>PENALTIES</h3>
+                    <table>
+                        <tr>
+                            <th>VIOLATION</th>
+                            <th>PENALTY</th>
+                        </tr>
+                        <tr>
+                            <td>Robot goes off track.</td>
+                            <td>+ 5 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Manual touch </td>
+                            <td>+ 15 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Skipping on obstacle</td>
+                            <td>+ 20 seconds</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>GENERAL RULES</h3>
+                    <ul>
+                        <li>Teams must report at least 20 min before their scheduled time.</li>
+                        <li>No practice run allowed on the main track.</li>
+                        <li>Judges have the  authority to stop a match if safety is compromised.</li>
+                        <li>Final decision rests with organizers.</li>
+                    </ul>
+                    
+                    <h3>WINNER DECLARATION</h3>
+                    <ul>
+                        <li>The winner will be decided based on minimum time( run time + penalties)</li>
+                        <li>In caseof a tie, on additional run may be conducted.</li>
+                    </ul>
+                    
+                    <div class="popup-buttons">
+                        <button class="popup-btn" onclick="closeRCCar()">Close</button>
+                        <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="popup-right">
+                    <img src="./event/rc car.jpeg" alt="RC Car">
+                </div>
+                
+            </template>
+            
+            <div id="rcCarPopup" class="jumanji-overlay"></div>
+            
+            <!-- ========== POPUP OVERLAY ========== -->
+            <div id="r.c carPopup" class="jumanji-overlay"></div>
+            <!-- rc car end -->
+            
+            
+            <!--cozmo clench start-->
+            <div class="event-card">
+                <span class="event-type">ROBOTICS</span>
+                <h3>COZMO CLENCH</h3>
+                <p>Engage with Cozmo robot challenges and complete fun interactive tasks. Show your creativity!</p>
+                <p class="members">Members: 4</p>
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openCozmoClench()">Explore</button>
+                </div>
+            </div>
+            <template id="cozmoClenchTemplate">
+                
+                <div class="popup-left">
+                    
+                    <h2>COZMO CLENCH</h2>
+                    <p>A creative robotics challenge featuring the Cozmo robot. Complete tasks, solve problems, and showcase innovation.</p>
+                    
+                    <h3>TEAM COMPOSITION</h3>
+                    <ul>
+                        <li>Each team may consist of 2 - 4 members.</li>
+                        <li>Only one robot allowed per team.</li>
+                        <li>Only one team membermay operate the robot during a round.</li>
+                        <li>One team member must be designated for official communication.</li>
+                        <li>Team  members must stay inside the operating zone.</li>
+                    </ul>
+                    
+                    <h3>ROBOT SPECIFICATIONS</h3>
+                    <ul>
+                        <li>The robot must be manually controlled(not autonomous).</li>
+                        <li>Maximum bot dimensions: <strong>20 × 30 × 30 cm</strong></li>
+                        <li>Robots must have clenching/gripping mechanism.</li>
+                        <li>Robots must be battery powered.</li>
+                        <li>No sharp edges allowed/magnets/adhesives.</li>
+                    </ul>
+                    <h3>EVENT RECORDS</h3>
+                    <ul>
+                        <li>There will be total of 3 rounds.</li>
+                        <li>Robot will be ranked on the basis of time of consumption and scores earned.</li>
+                    </ul>
+                    
+                    
+                    <h3>SCORING SYSTEM</h3>
+                    <ul>
+                        <li>Successful clench and lift : 10 points.</li>
+                        <li>Accurate placement in target zone : 10 points.</li>
+                        <li>Bonus for faat completion : upto 5  points.</li>
+                        <li>Penalties deducted from final score.</li>
+                    </ul>
+                    
+                    <h3>PENALTIES</h3>
+                    <table>
+                        <tr>
+                <th>VIOLATION</th>
+                <th>PENALTY</th>
+            </tr>
+            <tr>
+                <td>Dropping objects</td>
+                <td>- 5 points</td>
+            </tr>
+            <tr>
+                <td>Touching robot during run </td>
+                <td>- 10 points</td>
+            </tr>
+            <tr>
+                <td>Crossing arena boundry</td>
+                <td>- 5 points</td>
+            </tr>
+            <tr>
+                <td>Object out of target zone</td>
+                <td>- 5 points</td>
+            </tr>
+        </table>
+        <li>Second manual touch : disqualification</li>
+        
+        <h3>FOULS</h3>
+        <ul>
+            <li>Damaging arena.</li>
+            <li>Excessive force causing object brakage.</li>
+            <li>Manual interferance.</li>
+            <li>Unsportsmen like behaviour.</li>
+        </ul>
+        <h3>FOULS CONSEQUENCES</h3>
+        <ul>
+            <li>Warning for first offence.</li>
+            <li>Repitition will result in disqualification.</li>
+        </ul>
+        
+        <h3>GENERAL RULES</h3>
+        <ul>
+            <li>Robots must pass inspection before the match.</li>
+            <li>No robot replacement during a round.</li>
+            <li>Judges decisions are final and binding.</li>
+            <li>Organizers reserve the rigit to modify rules for fairness.</li>
+        </ul>
+        
+        <h3>WINNER DECLARATION</h3>
+        <ul>
+            <li>The winner will be decided based on highest  score.</li>
+            <li>In caseof a tie, a tie breaker round will be conducted.</li>
+        </ul>
+        
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeCozmoClench()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+        
+    </div>
+    
+    <div class="popup-right">
+        <img src="./event/cozmo clench.jpeg" alt="Cozmo Clench">
+    </div>
+    
+</template>
+
+<div id="cozmoClenchPopup" class="jumanji-overlay"></div>
+<!-- cozmo clench end-->
+
+<!-- line follower start-->
+<div class="event-card">
+    <span class="event-type">ROBOTICS</span>
+    <h3>LINE FOLLOWER</h3>
+    <p>Build a robot that can follow a track. Test your precision engineering skills in this exciting challenge.</p>
+    <p class="members">Members: 2</p>
+    <div style="display:flex; gap:10px;">
+        <button class="join-btn" onclick="navigateTo('register')">Join</button>
+        <button class="join-btn" onclick="openLineFollower()">Explore</button>
+    </div>
+</div>
+
+<template id="lineFollowerTemplate">
+    <div class="popup-left">
+        <h2>LINE FOLLOWER</h2>
+        <p>Design a robot that follows a predefined path with precision.</p>
+        ....
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeLineFollower()">Close</button>
+        </div>
+    </div>
+
+        <div class="popup-right">
+        <img src="event/line follower.jpeg" alt="Line Follower">
+    </div>
+    
+</template>
+
+
+<!-- ========== POPUP OVERLAY ========== -->
+<div id="lineFollowerPopup" class="jumanji-overlay"></div>
+
+<!-- line followe end-->
+
+<!-- open inn  start-->
+<div class="event-card">
+    <span class="event-type">OPEN INNOVATION</span>
+    <h3>OPEN INNOVATION</h3>
+    <p>Bring your innovative ideas to life in this creative competition! Compulsory 3 members, optional 2 members can join.</p>
+    <p class="members">Members: 5 (3 Compulsory, 2 Optional)</p>
+    <div style="display:flex; gap:10px;">
+        <button class="join-btn" onclick="navigateTo('register')">Join</button>
+        <button class="join-btn" onclick="openOpenInnovation()">Explore</button>
+    </div>
+</div>
+
+<template id="openInnovationTemplate">
+    <div class="popup-left">
+        <h2>OPEN INNOVATION</h2>
+        <p>Showcase innovative ideas and prototypes.</p>
+        ...
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeOpenInnovation()">Close</button>
+        </div>
+    </div>
+
+            <div class="popup-right">
+        <img src="event/open inno.jpeg" alt="Open Innovation">
+    </div>
+</template>
+
+
+<!-- ========== POPUP OVERLAY ========== -->
+<div id="openInnovationPopup" class="jumanji-overlay"></div>
+<!-- open inn end-->
+
+</div>
+
+<!-- ================= CODING CLUB ================= -->
+  <div class="levels-wrapper">
+      <h2 class="group-header">Coding Club</h2>
+      
+      <div class="events-grid ">
+          
+          <div class="event-card">
+              <span class="event-type">TECH QUIZ</span>
+              <h3>TECH QUIZ</h3>
+              <p>Test your tech knowledge in a fast-paced quiz!</p>
+              <p class="members">Members: Solo</p>
+              <div class="btn-row">
+                  <button class="join-btn">Join</button>
+                  <button class="join-btn">Explore</button>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <span class="event-type">FLASH DESIGN</span>
+                <h3>FLASH DESIGN</h3>
+                <p>Design a flashy project in limited time.</p>
+                <p class="members">Members: Solo</p>
+                <div class="btn-row">
+                    <button class="join-btn">Join</button>
+                    <button class="join-btn">Explore</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <!-- ================= UDAAN CLUB ================= -->
+        <h2 class="group-header">Udaan Club</h2>
+        <div class="events-grid single">
+            
+            <div class="event-card">
+                <span class="event-type">HOVERCRAFT</span>
+                <h3>HOVERCRAFT</h3>
+                <p>Build and race a hovercraft.</p>
+                <p class="members">Members: 4</p>
+                <div class="btn-row">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openHovercraft()">Explore</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        
+        
+    <!-- ================= HAYAGRIVA CLUB ================= -->
+      <div class="levels-wrapper">
+          <h2 class="group-header">Hayagriva Club</h2>
+          <div class="events-grid">
+              
+              <div class="event-card single">
+                  <span class="event-type">GO KARTS</span>
+                  <h3>GO KARTS</h3>
+                  <p>Show off your driving skills.</p>
+                  <p class="members">Members: Solo</p>
+                  <div class="btn-row">
+                      <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                      <button class="join-btn" onclick="openGoKarts()">Explore</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+            
+        <!-- ================= CYFOX CLUB ================= -->
+            <div class="levels-wrapper">
+                <h2 class="group-header">Cyfox Club</h2>
+                
+                <div class="events-grid">
+                    
+                    <div class="event-card">
+                        <h3>CTF</h3>
+                        <p>Capture the flag competition.</p>
+                        <p class="members">Members: 3</p>
+                        <div class="btn-row">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openCtf()">Explore</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <h3>Software Projects</h3>
+                        <p>Showcase your software project.</p>
+                        <p class="members">Members: 4</p>
+                        <div class="btn-row">
+                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                            <button class="join-btn" onclick="openSoftwareProjects()">Explore</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>  
+            <!-- ================= DND CLUB ================= -->
+                <div class="levels-wrapper">
+                    <h2 class="group-header">DND Club</h2>
+                    <div class="events-grid single">
+                        
+                        <div class="event-card">
+                            <h3>Photoshop Workshop</h3>
+                            <p>Learn Photoshop tricks.</p>
+                            <p class="members">Members: Solo</p>
+                            <div class="btn-row">
+                                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                                <button class="join-btn" onclick="openPhotoshop()">Explore</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>  
+                <!-- ================= HIS CLUB ================= -->
+                    <div class="levels-wrapper">
+                        <h2 class="group-header">HIS Club</h2>
+                        <div class="events-grid single">
+                            
+                            <div class="event-card">
+                                <h3>24 Hour Hackathon</h3>
+                                <p>Code non-stop for 24 hours.</p>
+                                <p class="members">Members: 4</p>
+                                <div class="btn-row">
+                                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                                    <button class="join-btn" onclick="openHackathons()">Explore</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- =================== TEMPLATES =================== -->
+<!-- ================================================= -->
+
+<template id="techQuizTemplate">
+  <div class="popup-left">
+    <h2>TECH QUIZ</h2>
+    <p>Fast-paced quiz testing technical knowledge.</p>
+    <div class="popup-buttons">
+      <button class="popup-btn" onclick="closeTechQuiz()">Close</button>
+    </div>
+  </div>
+</template>
+
+<template id="flashDesignTemplate">
+  <div class="popup-left">
+    <h2>FLASH DESIGN</h2>
+    <p>Create a design under time pressure.</p>
+    <div class="popup-buttons">
+      <button class="popup-btn" onclick="closeFlashDesign()">Close</button>
+    </div>
+  </div>
+</template>
+
+<template id="hovercraftTemplate">
+  <div class="popup-left">
+    <h2>HOVERCRAFT</h2>
+    <p>Build and race a hovercraft.</p>
+    <div class="popup-buttons">
+      <button class="popup-btn" onclick="closeHovercraft()">Close</button>
+    </div>
+  </div>
+</template>
+
+<template id="goKartsTemplate">
+  <div class="popup-left">
+    <h2>GO KARTS</h2>
+    <p>Solo go-kart racing event.</p>
+    <div class="popup-buttons">
+      <button class="popup-btn" onclick="closeGoKarts()">Close</button>
+    </div>
+  </div>
+</template>
+
+
+<!-- ================= POPUP OVERLAYS ================= -->
+<div id="techQuizPopup" class="jumanji-overlay"></div>
+<div id="flashDesignPopup" class="jumanji-overlay"></div>
+<div id="hovercraftPopup" class="jumanji-overlay"></div>
+<div id="goKartsPopup" class="jumanji-overlay"></div>
+
+
+</section>
+        <!-- TEAM -->
+    <section id="team" class="page">
+            <h1 class="section-header">THE GUARDIANS</h1>
+            <p style="text-align: center; color: #6ee7b7; margin-bottom: 3rem; font-size: 1.1rem;">Zircon Club - Organizing AADHAR '14</p>
+            
+            <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Leadership</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/luck.png" alt="Lucky Pandey"><h3>Lucky Pandey</h3><p>Captain</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Prachi g.png" alt="Prachi Garg"><h3>Prachi Garg</h3><p>Vice Captain</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/harsh.png" alt="Harsh Danwar"><h3>Harsh Danwar</h3><p>Vice Captain</p></div>
+                </div>
+            </div>
+
+               <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Web Team</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="/Photos/nm.png" alt="Nayan Mathur"><h3>Nayan Mathur</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="/Photos/nihalgupta.png" alt="Nihal Gupta"><h3>Nihal Gupta</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/prtusha.png" alt="Pratyusha Chouhan"><h3>Pratyusha Chouhan</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/GP.png" alt="Gaurav Panwar"><h3>Gaurav Panwar</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/PARTH.png" alt="Parth Srivastava"><h3>Parth Srivastava</h3><p>Member</p></div>
+                </div>
+            </div>
+
+             <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Sponsor Team</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/parnay.png" alt="Pranay porwal"><h3>Pranay porwal</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Prachi g.png" alt="Prachi Garg"><h3>Prachi Garg</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/divyakansh.png" alt="Divyakansh Goyal"><h3>Divyakansh Goyal</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/asmi.png" alt="Asmi Jain"><h3>Asmi Jain</h3><p> Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/prakesh j.png" alt="Preksha Jain"><h3>Preksha Jain</h3><p>Member</p></div>
+                </div>
+            </div>
+
+               <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">PR Team</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/suvansh s.png" alt="Suvansh Siringhi"><h3>Suvansh Siringhi</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/VEENIT.png" alt="Vineet Sharma"><h3>Vineet Sharma</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/aditya.png" alt="Aditya Sen"><h3>Aditya Sen</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/sejal-removebg-preview.png" alt="Sejal Jain"><h3>Sejal Jain</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/deepika b.png" alt="Deepika Babani"><h3>Deepika Babani</h3><p>Member</p></div>
+                </div>
+            </div>
+
+              <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Graphic Team</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/nisha.png" alt="Nisha Leharwani"><h3>Nisha Leharwani</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/CK1.png" alt="Chetali Kumawat"><h3>Chetali Kumawat</h3><p>Member</p></div>                    
+                    <div class="team-member"><img class="avatar-img" src="Photos/DC.png" alt="Divya Chitlangiya"><h3>Divya Chitlangiya</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Subhansi.png" alt="Shubhanshi Jain"><h3>Shubhanshi Jain</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Kshitz.png" alt="Kshitz"><h3>Kshitz</h3><p>Member</p></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Scoial Media</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/Prateek.png" alt="Prateek"><h3>Prateek</h3><p>Core Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/mudit.png" alt="Mudit"><h3>Mudit</h3><p> Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/KS.png" alt="Krishna Soni"><h3>Krishna Soni</h3><p>Member</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Rohan.png" alt="Rohan"><h3>Rohan</h3><p>Member</p></div>
+                </div>
+            </div>  
+
+            <div style="margin-bottom: 4rem;">
+                <h2 style="color: var(--color-primary); font-size: 1.3rem; margin: 2rem 0 1.5rem 0; text-shadow: 0 0 10px var(--color-primary);">Event coordinator</h2>
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/nm.png" alt="Nayan Mathur"><h3>Nayan Mathur</h3><p>Senior coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/manan.png" alt="Manan Gupta"><h3>Manan Gupta</h3><p>Senior coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/anshika jain.png" alt="Anshika Jain"><h3>Anshika Jain</h3><p>coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Mantavya.png" alt="Mantavya Shivhare"><h3>Mantavya Shivhare</h3><p>coordinator</p></div>
+                </div>
+            </div>
+
+             <div style="margin-bottom: 4rem;">
+                <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="team-member"><img class="avatar-img" src="Photos/SK.png" alt="Sidhi Khandelwal"><h3>Sidhi Khandelwal</h3><p>coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/KA.png" alt="Kashvi Agrawal"><h3>Kashvi Agrawal</h3><p>coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/Ps.png" alt="Prachi Santiant"><h3>Prachi Santiant</h3><p>coordinator</p></div>
+                    <div class="team-member"><img class="avatar-img" src="Photos/SS.png" alt="Suhani Sethiya"><h3>Suhani sethiya</h3><p>coordinator</p></div>
+                </div>
+            </div>
+  </section>
+  
+  <!-- CONTACT -->
+  <section id="contact" class="page">
+    <div class="contact-layout">
+      <aside class="contact-info" aria-labelledby="contact-heading">
+        <h1 id="contact-heading" class="section-header" style="text-align:left; margin-bottom:1rem;">SEND A SIGNAL</h1>
+        <p class="contact-desc">Lost in the jungle? Need directions? Or just want to say hello? Our base camp is always listening.</p>
+  
+        <div class="contact-item">
+          <div class="icon-box">📍</div>
+          <div><h4>BASE CAMP</h4><p>Poornima College of Engineering, Jaipur</p></div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="icon-box">✉️</div>
+          <div><h4>RADIO FREQUENCY</h4><p><a href="mailto:zircon.aadhar@poornima.org" style="color:inherit; text-decoration:underline;">zircon.aadhar@poornima.org</a></p></div>
+        </div>
+  
+        <div class="contact-item">
+          <div class="icon-box">📞</div>
+          <div><h4>EMERGENCY LINE</h4><p><br>
+            <a href="tel:+919667554895" style="color:inherit; text-decoration:underline;">+91 9667554895 - Lucky Pandey</a><br><br>
+            <a href="tel:+919079858676" style="color:inherit; text-decoration:underline;">+91 9079858676 - Harsh Danwar</a><br><br>
+            <a href="tel:+919462124170" style="color:inherit; text-decoration:underline;">+91 9462124170 - Prachi Garg</a><br><br>
+            <a href="tel:+917041274329" style="color:inherit; text-decoration:underline;">+91 7041274329 - Nayan Mathur</a>
+        </p></div>
+        </div>
+      </aside>
+  
+      <div class="contact-form-wrapper" aria-label="Contact form">
+        <form id="contactForm">
+          <div class="form-group"><label for="name">YOUR NAME</label><input id="name" name="name" type="text" placeholder="Explorer Name" required></div>
+          <div class="form-group"><label for="email">YOUR SIGNAL (EMAIL)</label><input id="email" name="email" type="email" placeholder="explorer@jungle.com" required></div>
+          <div class="form-group"><label for="message">MESSAGE</label><textarea id="message" name="message" placeholder="What have you found?" rows="4" required></textarea></div>
+          <button type="submit" class="btn-submit">TRANSMIT MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CONTACT HQ</h3>
+                <p>📧 zircon.aadhar@poornima.org</p>
+                <p>📞 +91 9876543210</p>
+                <p>📍 Poornima College of Engineerng, Jaipur</p>
+            </div>
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <a onclick="navigateTo('home')">Home</a>
+                <a onclick="navigateTo('register')">Register</a>
+                <a onclick="navigateTo('events')">Events</a>
+                <a onclick="navigateTo('about')">About</a>
+                <a onclick="navigateTo('team')">Team</a>
+            </div>
+            <div class="footer-section">
+                <h3>THE ADVENTURE</h3>
+                <p>AADHAR is the annual tech event of Poornima College, where students venture into the digital jungle to showcase their skills, creativity, and innovation.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AADHAR XIV. May the best player win.</p>
+        </div>
+    </footer>
+
+    <div class="sound-toggle">AUDIO [OFF]</div>
+
+    <!-- POPUP (one unified popup) -->
+    <div id="popup-box" class="popup-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="popup-box" role="document">
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+            <div style="display:flex; gap:10px; justify-content:center; margin-top:1rem;">
+                <button onclick="closePopup()" style="padding:10px 18px; background:transparent; border:1px solid var(--color-primary); color:var(--color-primary); cursor:pointer;">Close</button>
+                <button onclick="navigateTo('register'); closePopup();" style="padding:10px 18px; background:var(--color-primary); border:none; color:#000; cursor:pointer;">Register</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
