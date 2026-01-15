@@ -119,10 +119,7 @@
                         <p>Battle bots in the arena of champions.</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openEventPopup('roboWar')">
-  Explore
-</button>
-button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
 
@@ -132,7 +129,7 @@ button>
                         <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openExplore('BUG HUNT', 'Fix buggy code under time pressure and win glory.')">Explore</button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
 
@@ -142,7 +139,7 @@ button>
                         <p>Build a hovercraft and complete in a thrilling race</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openExplore('ROBO RACE', 'Bring your fastest bot — speed and stability matter.')">Explore</button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
 
@@ -152,7 +149,7 @@ button>
                         <p>Capture the flag in this stragetic game!</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openExplore('COSMO CLASH', 'Compete in squads across galactic arenas.')">Explore</button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
 
@@ -162,7 +159,7 @@ button>
                         <p>Solve riddles and find hidden treasures.</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openExplore('TREASURE HUNT', 'Crack clues around campus to win prizes.')">Explore</button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
 
@@ -172,7 +169,7 @@ button>
                         <p>Bring your innovative ideas to life in this creative competition!</p>
                         <div style="display:flex; gap:10px;">
                             <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openExplore('VALORANT', 'Bring your squad for tactical combat.')">Explore</button>
+                            <button class="join-btn" onclick="navigateTo('events')" >Explore</button>
                         </div>
                     </div>
                 </div>
@@ -260,7 +257,8 @@ button>
         <!-- ```// filepath: d:\(coding)Dhruv\AADHAR\JumanjiAadhar-main\JumanjiAadhar-main\client\public\vanilla\index.html -->
         <!-- ...existing code... -->
         <section id="register" class="page">
-            <h1 class="comingsoon" style="text-align: center;margin-top: 230px; color: #ffdc41;">REGISTRATION COMING SOON...</h1>
+            <h1 class="comingsoon" style="text-align: center;margin-top: 230px; color: #ffdc41;">"The drums are beating... the gates will open soon."</h1>
+            <p class="comingsoon" style="text-align: center; color: #ffdc41;">"Stay tuned for registration launch-AADHAR XIV"</p>
             <button class="btn-primary" style="display: block; margin: 20px auto;" onclick="navigateTo('events')">BACK TO LEVELS</button>
           <!-- <div style="max-width:900px;margin:0 auto;background:rgba(0,0,0,0.85);border:1px solid #065f46;padding:2.5rem;">
             <h2 style="color:var(--color-primary);text-align:center;font-size:2rem;margin-bottom:1rem;">ENTER THE GAME</h2>
@@ -268,7 +266,7 @@ button>
         
             <form id="registrationForm" enctype="multipart/form-data">
               <div style="display:grid;gap:1rem;">
-        
+                
                 <label>Interested Event</label>
                 <select id="eventSelect" name="event" required>
                   <option value="">-- Select an event --</option>
@@ -480,12 +478,12 @@ button>
       <div class="events-grid">
           <div class="event-card">
               <span class="event-type">ROBOTICS</span>
-              <h3>ROBO SOCCER</h3>
-              <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
-              <p class="members">Members: 5</p>
-              <div style="display:flex; gap:10px;">
-                  <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                  <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
+                <h3>ROBO WAR</h3>
+                <p>Design and battle powerful robots in a high-intensity combat arena</p>
+                <p class="members">Members: 15</p>
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openRoboWar()">Explore</button>
                 </div>
             </div>
             
@@ -592,12 +590,12 @@ button>
             
             <div class="event-card">
                 <span class="event-type">ROBOTICS</span>
-                <h3>ROBO WAR</h3>
-                <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
-                <p class="members">Members: 15</p>
-                <div style="display:flex; gap:10px;">
-                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                    <button class="join-btn" onclick="openRoboWar()">Explore</button>
+                 <h3>ROBO SOCCER</h3>
+              <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
+              <p class="members">Members: 5</p>
+              <div style="display:flex; gap:10px;">
+                  <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                  <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
                 </div>
             </div>
             <template id="roboWarTemplate">
@@ -942,19 +940,72 @@ button>
 
 <template id="lineFollowerTemplate">
     <div class="popup-left">
+
         <h2>LINE FOLLOWER</h2>
-        <p>Design a robot that follows a predefined path with precision.</p>
-        ....
+
+        <p>
+            Line Follower is an autonomous robotics challenge where participants design
+            and program a robot capable of detecting and following a predefined path.
+            The robot must accurately track the line using sensors and control logic
+            without any manual intervention.
+        </p>
+
+        <h3>TEAM COMPOSITION</h3>
+        <ul>
+            <li>Each team may consist of <strong>1 – 2 members</strong>.</li>
+            <li>Only one robot per team is allowed.</li>
+        </ul>
+
+        <h3>ROBOT SPECIFICATIONS</h3>
+        <ul>
+            <li>The robot must be fully autonomous (no remote control allowed).</li>
+            <li>Line detection must be done using IR sensors or equivalent.</li>
+            <li>Robot must be battery operated.</li>
+            <li>Maximum robot dimensions: <strong>25 × 25 × 25 cm</strong>.</li>
+            <li>Robot must follow a black/white line on a contrasting surface.</li>
+        </ul>
+
+        <h3>TRACK DETAILS</h3>
+        <ul>
+            <li>The track will include straight paths, curves, and sharp turns.</li>
+            <li>Track design will be disclosed at the venue.</li>
+            <li>Any deviation from the track will be considered an error.</li>
+        </ul>
+
+        <h3>SCORING CRITERIA</h3>
+        <ul>
+            <li>Fastest completion time.</li>
+            <li>Accuracy in following the line.</li>
+            <li>Penalty for leaving the track.</li>
+        </ul>
+
+        <h3>PENALTIES</h3>
+        <ul>
+            <li>Manual touch: Time penalty.</li>
+            <li>Robot leaving track repeatedly: Disqualification.</li>
+        </ul>
+
+        <h3>GENERAL RULES</h3>
+        <ul>
+            <li>No changes allowed to the robot after inspection.</li>
+            <li>Judges’ decisions are final and binding.</li>
+            <li>Organizers reserve the right to modify rules if required.</li>
+        </ul>
+
         <div class="popup-buttons">
             <button class="popup-btn" onclick="closeLineFollower()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
         </div>
+
     </div>
 
-        <div class="popup-right">
-        <img src="event/line follower.jpeg" alt="Line Follower">
+    <div class="popup-right">
+        <img src="./event/line follower.jpeg" alt="Line Follower">
     </div>
-    
 </template>
+
+<div id="lineFollowerPopup" class="jumanji-overlay"></div>
+
 
 
 <!-- ========== POPUP OVERLAY ========== -->
@@ -977,17 +1028,83 @@ button>
 <template id="openInnovationTemplate">
     <div class="popup-left">
         <h2>OPEN INNOVATION</h2>
-        <p>Showcase innovative ideas and prototypes.</p>
-        ...
+
+        <p>
+            Open Innovation is a platform that encourages students to present creative,
+            practical, and impactful ideas by combining technology, research, and
+            real-world problem solving. Participants can showcase hardware, software,
+            or hybrid projects and receive expert feedback.
+        </p>
+
+        <h3>TEAM FORMATION</h3>
+        <ul>
+            <li>Each team must consist of <strong>4 – 6 members</strong>.</li>
+            <li>Inter-disciplinary teams are allowed and encouraged.</li>
+            <li>Inter-college team formation is <strong>not allowed</strong>.</li>
+        </ul>
+
+        <h3>REPORTING TIME</h3>
+        <ul>
+            <li>Teams must report at least <strong>30 minutes before</strong> the scheduled start time.</li>
+            <li>Late arrival may lead to disqualification.</li>
+        </ul>
+
+        <h3>PROJECT DOMAIN</h3>
+        <ul>
+            <li>Hardware</li>
+            <li>Software</li>
+            <li>Hardware + Software (Hybrid)</li>
+        </ul>
+
+        <h3>JUDGING PROCESS</h3>
+        <ul>
+            <li>There will be <strong>one judging round only</strong>.</li>
+            <li>Judges’ decisions will be final and binding.</li>
+        </ul>
+
+        <h3>INFRASTRUCTURE SUPPORT</h3>
+        <ul>
+            <li>Electric sockets will be provided at the venue.</li>
+            <li>Teams must bring their own extension boards if required.</li>
+        </ul>
+
+        <h3>PROJECT DISPLAY REQUIREMENTS</h3>
+        <ul>
+            <li>Each team must bring an <strong>A3-size poster</strong>.</li>
+            <li>The poster must include:
+                <ul>
+                    <li>Problem Statement</li>
+                    <li>Solution Approach</li>
+                    <li>System Design / Workflow</li>
+                    <li>Expected Impact</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>WINNERS</h3>
+        <ul>
+            <li>First Prize Winner</li>
+            <li>Second Prize Winner</li>
+        </ul>
+
+        <h3>GENERAL INSTRUCTIONS</h3>
+        <ul>
+            <li>Projects must be original and must not violate intellectual property rules.</li>
+            <li>Any form of misconduct or plagiarism will lead to immediate disqualification.</li>
+            <li>Teams are responsible for the safety of their own equipment.</li>
+        </ul>
+
         <div class="popup-buttons">
             <button class="popup-btn" onclick="closeOpenInnovation()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
         </div>
     </div>
 
-            <div class="popup-right">
+    <div class="popup-right">
         <img src="event/open inno.jpeg" alt="Open Innovation">
     </div>
 </template>
+
 
 
 <!-- ========== POPUP OVERLAY ========== -->
@@ -995,6 +1112,43 @@ button>
 <!-- open inn end-->
 
 </div>
+
+<!-- ================= UDAAN CLUB ================= -->
+<h2 class="group-header">Udaan Club</h2>
+<div class="events-grid single">
+    
+    <div class="event-card">
+        <span class="event-type">HOVERCRAFT</span>
+        <h3>HOVERCRAFT</h3>
+        <p>Build and race a hovercraft.</p>
+        <p class="members">Members: 4</p>
+        <div class="btn-row">
+            <button class="join-btn" onclick="navigateTo('register')">Join</button>
+            <button class="join-btn" onclick="openHovercraft()">Explore</button>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+<!-- ================= HAYAGRIVA CLUB ================= -->
+  <div class="levels-wrapper">
+      <h2 class="group-header">Hayagriva Club</h2>
+      <div class="events-grid">
+          
+          <div class="event-card single">
+              <span class="event-type">GO KARTS</span>
+              <h3>GO KARTS</h3>
+              <p>Show off your driving skills.</p>
+              <p class="members">Members: Solo</p>
+              <div class="btn-row">
+                  <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                  <button class="join-btn" onclick="openGoKarts()">Explore</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
 
 <!-- ================= CODING CLUB ================= -->
   <div class="levels-wrapper">
@@ -1004,132 +1158,1050 @@ button>
           
           <div class="event-card">
               <span class="event-type">TECH QUIZ</span>
-              <h3>TECH QUIZ</h3>
-              <p>Test your tech knowledge in a fast-paced quiz!</p>
-              <p class="members">Members: Solo</p>
-              <div class="btn-row">
-                  <button class="join-btn">Join</button>
-                  <button class="join-btn">Explore</button>
-                </div>
-            </div>
-            
+       <h3>TECH QUIZ</h3>
+        <p>Test your tech knowledge in a fast-paced quiz.</p>
+        <p class="members">Members: Solo</p>
+    <div style="display:flex; gap:10px;">
+         <button class="join-btn" onclick="navigateTo('register')">Join</button>
+        <button class="join-btn" onclick="openTechQuiz()">Explore</button>
+    </div>
+</div>
+
+<!-- ✅ MOVED OUT: template must NOT be inside event-card -->
+<template id="techQuizTemplate">
+
+    <div class="popup-left">
+
+        <h2>TECH QUIZ</h2>
+        <p>A thrilling robotic football challenge where your bot pushes, hits, and scores goals with precision & power!</p>
+
+        <h3>TEAM COMPOSITIONS</h3>
+        <ul>
+            <li>Each team must consist of minimum 2 and maximum 4 members.</li>
+            <li>Cross-branch teams are allowed.</li>
+            <li>Once registered, no change in team members will be permitted under any circumstances.</li>
+            <li>Each team must have one designated captain who will submit answers.</li>
+            <li>If you can’t even finalize a team, you’re not serious about competing.</li>
+        </ul>
+
+        <h3>QUIZ FORMAT</h3>
+        <ul>
+            <li>The quiz consists of 25 questions. 
+            <li>Questions will be technical in nature, covering:</li>
+            <ol>
+                <li>Computer Science & IT</li>
+                <li>Programming & Logic</li>
+                <li>Cybersecurity & Networking</li>
+                <li>General Tech Awareness</li>
+            </ol>
+            <li>Questions may be MCQs or short-answer based.</li>
+        </ul>
+
+        <h3>ANSWERING SYSTEM (Speed Based)</h3>
+        <ul>
+            <li>Questions will be displayed one at a time.</li>
+            <li>Teams must submit answers using the official response system (Google Form / buzzer / platform decided by organizers).</li>
+            <li>First correct answer gets the point.</li>
+            <li>If the first team answers incorrectly, negative marking applies and the chance passes to the next fastest team.</li>
+            <li>Speed without accuracy will kill your score. Think before you tap.</li>
+        </ul>
+
+        <h3>MARKING SCHEME </h3>
+        <ul>
+            <li>Correct Answer (First Correct): +10 points</li>
+            <li>Wrong Answer: – 5 points</li>
+            <li>No Attempt: 0 points</li>
+            <li>Only one attempt per question per team is allowed.</li>
+            <li>Once an answer is submitted, it cannot be changed.</li>
+        </ul>
+
+        <h3>TIME LIMIT</h3>
+        <ul>
+          <li>Each question will have a fixed time limit (announced before the quiz).</li>
+          <li>Answers submitted after the time limit will not be considered.</li>
+          <li>Late submissions = automatic no attempt.</li>
+        </ul>
+
+        <h3>TIE BREAKER RULES</h3>
+        <ul>
+            <li>In case of a tie :</li>
+           <ol>
+            <li>Team with fewer negative marks wins.If still tied, a rapid-fire tie-breaker round will be conducted.</li>
+            <li>Organizers’ decision will be final and binding.</li>
+           </ol>
+        </ul>
+
+        <h3>FAIR PLAY & DISQUALIFICATION</h3>
+        <UL>
+            <li>Use of mobile phones, smartwatches, internet, or external help is strictly prohibited.</li>
+            <li>Any form of cheating, signaling, or misbehavior will result in immediate disqualification.</li>
+            <li>Teams must follow instructions given by quiz masters and volunteers.</li>
+            <li>If you’re caught cheating, there’s no warning, no drama—just out.</li>
+        </UL>
+
+        <h3>ORGANIZER'S AUTHORITY</h3>
+        <ul>
+            <li>The quiz master’s decision is final.</li>
+            <li>Organizers reserve the right to:</li>
+            <ol>
+                <li>Modify rules if required.</li>
+                <li>Disqualify teams for misconduct.</li>
+                <li>Resolve disputes on the spot.</li>
+            </ol>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeTechQuiz()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="popup-right">
+        <img src="./event/tech-quiz.webp" alt="Tech Quiz">
+    </div>
+
+</template>
+<div id="techQuizPopup" class="jumanji-overlay"></div>
+<!-- tech quiz end -->
+   <!-- flash design start-->
             <div class="event-card">
                 <span class="event-type">FLASH DESIGN</span>
                 <h3>FLASH DESIGN</h3>
-                <p>Design a flashy project in limited time.</p>
+                <p>Design a website UI/UX project in limited time.</p>
                 <p class="members">Members: Solo</p>
-                <div class="btn-row">
-                    <button class="join-btn">Join</button>
-                    <button class="join-btn">Explore</button>
+                
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openFlashDesign()">Explore</button>
                 </div>
             </div>
+            <template id="flashDesignTemplate">
+                
+                <div class="popup-left">
+                    
+                    <h2>FLASH DESIGN</h2>
+                    <p>Design a website UI/UX project in limited time.</p>
+                
+                    <h3>TEAM COMPOSITION</h3>
+                    <ul>
+                        <li>Participation allowed in teams of 2-4 members only.</li>
+                        <li>Multiple teams from the same college are allowed.</li>
+                        <li>Once registered, no member changes are permitted.</li>
+                        <li>If you need more than two people for UI/UX, you’re hiding weak decision-making.</li>
+                    </ul>
+                    
+                    <h3>EVENT OVERVIEW</h3>
+                    <ul>
+                        <li>This is a time-bound UI/UX design challenge.</li>
+                        <li>Participants must design a website interface (UI + UX flow) based on a problem statement/theme revealed on the spot.</li>
+                        <li>The focus is on user experience, clarity, and usability, not fancy visuals.</li>
+                        <li>Increased difficulty (additional obstacles on tighter turns).</li>
+                        <li>If your design looks good but solves nothing, it fails.</li>
+                    </ul>
+                    
+                    <h3>DESIGN SCOPE(What You Must Design)</h3>
+                    <ul>
+                        <li>Participants must design:</li>
+                       <ol>
+                        <li>Homepage</li>
+                        <li>One core feature page (e.g., dashboard, booking, checkout, etc.)</li>
+                        <li>Basic user flow (minimum 3 steps)</li>
+                       </ol>
+                       <li>Deliverables must clearly show:</li>
+                       <ol>
+                        <li>Navigation structure.</li>
+                        <li>CTA placement.</li>
+                        <li>Content hierarchy.</li>
+                       </ol>
+                    </ul>
+                    
+                    <h3>TOOLS AND AI USAGE</h3>
+                    <UL>
+                        <li>Allowed tools:</li>
+                        <ol>
+                            <li>Figma (preferred), Adobe XD, Sketch</li>
+                            <li>Wireframing tools.</li>
+                            <li>AI tools (ChatGPT, UX generators, image generators)</li>
+                        </ol>
+                        <li>Rules on AI:</li>
+                        <ol>
+                            <li>AI can assist with ideas, UX flows, copy, or visuals.</li>
+                            <li>Blind AI-generated UI = low score.</li>
+                            <li>Plagiarized or pre-made UI kits = disqualification.</li>                            
+                        </ol>
+                        <li>AI is a tool, not your brain.</li>
+                    </UL>
+                    
+                    <h3>TIME LIMIT</h3>
+                    <ul>
+                        <li>Total duration: 90 minutes.</li>
+                        <li>First 15 minutes: understand problem & plan UX.</li>
+                        <li>Next 60 minutes: design.</li>
+                        <li>Last 15 minutes: polish & prepare explanation.</li>
+                        <li>No extra time. Real designers ship under pressure.</li>
+                    </ul>
+                    
+                    <h3>SUBMISSION GUIDELINES</h3>
+                    <ul>
+                        <li>Each team must submit:</li>
+                        <OL>
+                            <LI>Figma link (view access).</LI>
+                            <li>Exported screens (PNG/JPG).</li>
+                        </OL>
+                        <li>UX explanation (max 150 words) covering:</li>
+                        <ol>
+                            <li>Target user.</li>
+                            <li>Problem being solved.</li>
+                            <lI>Key design decisions.</lI>
+                            <li>Late submissions = ignored.</li>
+                        </ol>
+                    </ul>
+                     
+                    <h3>JUDGING CRITERIA(100 Marks)</h3>
+                    <ul>
+                        <li>Problem Understanding & UX Logic – 30 Marks</li>
+                        <OL>
+                            <LI>Clear user persona.</LI>
+                            <LI>Logical user journey.</LI>
+                            <LI>Pain points addressed.</LI>
+                            <li>Miss this and nothing else matters.</li>
+                        </OL>
+                        <li>Usability & Information Architecture – 20 Marks</li>
+                        <ol>
+                            <li>Navigation clarity.</li>
+                            <li>Flow simplicity.</li>
+                            <lI>No unnecessary clicks.</lI>
+                            <li>If a user gets confused, you already lost.</li>
+                        </ol>
+                        <li>UI Design & Visual Consistency – 20 Marks</li>
+                        <ol>
+                            <li>Color system.</li>
+                            <li>Typography.</li>
+                            <li>Spacing & alignment.</li>
+                            <li>Component consistency.</li>
+                            <li>Pretty but inconsistent = amateur.</li>
+                        </ol>
+                        <li>Creativity & Innovation – 15 Marks</li>
+                        <ol>
+                            <li>Unique approach.</li>
+                            <li>Smart feature thinking.</li>
+                            <li>Not a clone of popular websites.</li>
+                        </ol>
+                        <li>AI Usage & Tool Mastery – 10 Marks</li>
+                        <ol>
+                            <li>Effective, ethical use of AI.</li>
+                            <li>Customization beyond AI output.</li>
+                            <li>Clean execution in tools.</li>
+                        </ol>
+                            <li>Explanation & Justification – 5 Marks</li>
+                          <ol>
+                            <li>Clear, confident explanation.</li>
+                            <li>Defending design decisions logically.</li>
+                          </ol>
+                    </ul>
+
+                    <h3>DISQUALIFICATION RULES</h3>
+                    <ul>
+                        <li>Pre-designed templates.</li>
+                        <li>Copying existing websites.</li>
+                        <li>Missing required screens.</li>
+                        <li>Offensive or irrelevant content - No mercy here.</li>
+                    </ul>
+                     
+                    <h3>TIE BREAKER</h3>
+                    <ul>
+                        <li>In case of tie:</li>
+                        <ol>
+                            <li>Team with higher Ux logic wins.</li>
+                            <li>Team with better live explanation wins.</li>
+                        </ol>
+                        <h3>AUTHORITY AND FINAL DECISION</h3>
+                        <ul>
+                            <li>Judges’ decisions are final and non-negotiable.</li>
+                            <li>Organizers may modify rules if necessary.</li>
+                        </ul>
+                    </ul>
+                    
+                    <div class="popup-buttons">
+                        <button class="popup-btn" onclick="closeFlashDesign()">Close</button>
+                        <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="popup-right">
+                    <img src="./event/flash.png" alt="Flash Design">
+                </div>
+                
+            </template>
             
+        
+            
+            <!-- ========== POPUP OVERLAY ========== -->
+            <div id="flashdesignPopup" class="jumanji-overlay"></div>
+            <!-- flash design end -->
+            
+
+        <!-- ================= GDES CLUB ================= -->
+<div class="levels-wrapper">
+    <h2 class="group-header">GDES Club</h2>
+
+    <div class="events-grid">
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+        <h3>BGMI</h3>
+        <p>Play intense battle royale matches with your squad and fight for victory.</p>
+        <p class="members">Members: 3-4</p>
+    <div style="display:flex; gap:10px;">
+         <button class="join-btn" onclick="navigateTo('register')">Join</button>
+        <button class="join-btn" onclick="openBGMI()">Explore</button>
+    </div>
+</div>
+
+<!-- ✅ MOVED OUT: template must NOT be inside event-card -->
+<template id="BGMITemplate">
+                
+                <div class="popup-left">
+                    
+                    <h2>BGMI</h2>
+                    <p>Play intense battle royale matches with your squad and fight for victory.</p>
+                    
+                    <h3>GENERAL INFORMATION</h3>
+                    <ul>
+                        <li>Match Type: Custom Room.</li>
+                        <li>Perspective: TPP (Third Person Perspective).</li>
+                        <li>Map(s): Erangel / Miramar / Rondo (Need to be downloaded before the match).</li>
+                        <li>Team Size: Squad (4 players).</li>
+                        <li>Slots: 16 Teams (64 players).</li>
+                        <li>Server: India.</li>
+                        <li>Minimum Players per Team: 3 (4 recommended).</li>
+                    </ul>
+                    
+                    <h3>TOURNAMENT FORMAT</h3>
+                    <ul>
+                        <li>Matches will be played in custom rooms only</li>
+                        <li>Total Matches: 3.</li>
+                            <li>Final rankings will be decided by:</li>
+                        <OL>
+                            <li>Total Points.</li>
+                            <li>Total Finishes.</li>
+                            <li>Best Single Match Placement.</li>
+                        </OL>
+                    </ul>
+                    
+                    <h3>OFFICIAL BGMI POINT SYSTEM</h3>
+                    <li>Placement Points</li>
+                    <table>
+                        <tr>
+                            <th>RANK</th>
+                            <th>POINT</th>
+                        </tr>
+                        <tr>
+                            <td>1st</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>4th</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5th</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>6th</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>7th</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>8-16th</td>
+                            <td>0</td>
+                    </table>
+                    <li>Finsh kill points : 1 finish = 1 point</li>
+                    <li>Total match score : Total score = Placement points + Kill Points.</li>
+                    <h3>ROOM & MATCH RULES</h3>
+                    <ul>
+                        <li>Room ID & Password will be shared 10–15 minutes before match</li>
+                            <li>Players must join with:</li>                        
+                            <ol>
+                            <li>Late entry is not allowed</li>
+                            <li>Correct team  tag as registered.</li>
+                        </ol>
+                        <li>Matches are scheduled by organizers.</li>
+                        <li>Once the match starts, no re-entry.</li>
+                        
+                      
+                    <h3>PLAYER & TEAM RULES</h3>
+                    <ul>
+                        <li>Only registered players are allowed to play.</li>
+                        <li>Substitutes must be informed before the match.</li>
+                        <li>Team change during the tournament is not allowed.</li>
+                        <li>Playing for multiple teams is strictly prohibited.</li>
+                    </ul>
+                    <h3>FAIR PLAY & CHEATING POLICY</h3>
+                    <ul>
+                        <li>Strictly NOT allowed:</li>
+                        <ol>
+                            <li>Hacks, mods, scripts, config files.</li>
+                            <li>Emulator or tablet (if mobile-only event).</li>
+                            <li>Exploiting glitches or bugs.</li>
+                            <li>Ghosting or stream sniping.</li>
+                            <li>Teaming with other squads.</li>
+                        </ol>
+                        <li>Punishment</li>
+                        <ol>
+                            <li>Immediate disqualification.</li>
+                            <li>Ban from future events.</li>
+                        </ol>
+                    
+                    <h3>DISCONNECT & TECHNICAL ISSUES</h3>
+                    <ul>
+                        <li>Internet issues are player responsibility.</li>
+                        <li>No rematch for :</li>
+                        <ol>
+                            <li>Lag.</li>
+                            <li>Device crash.</li>
+                            <li>Network failure.</li>
+                        </ol>
+                        <li>If server issue affects many teams → rematch.</li>
+                        
+                    </ul><h3>SPECTATING & STREAMING</h3>
+                    <ul>
+                        <li>Only official spectators allowed in room.</li>
+                    </ul>
+                    
+                    <h3>CONDUCT & DISCIPLINE</h3>
+                    <ul>
+                        <li> Respect all players and admins.</li>
+                        <li>No abusive language in:</li>
+                        <ol>
+                            <li>In-game chat</li>
+                            <li>Voice chat</li>
+                            <li>Discord / WhatsApp groups</li>
+                        </ol>
+                        <li>Any misconduct may lead to:</li>
+                        <ol>
+                            <li>Point deduction</li>
+                            <li>Match disqualification</li>
+                        </ol>
+                    </ul>
+                    <h3>ORGANIZER RIGHTS</h3>
+                    <ul>
+                        <li>Organizers reserve the right to</li>
+                        <ol>
+                            <li>Decide penalties</li>
+                            <li>Resolve disputes</li>
+                        </ol>
+                        <li>Organizer’s decision is final and binding</li>
+                    
+                    </ul>
+                    
+                    <div class="popup-buttons">
+                        <button class="popup-btn" onclick="closeBGMI()">Close</button>
+                        <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+                    </div>
+                </div>
+                
+                <!-- RIGHT IMAGE -->
+                <div class="popup-right">
+                    <img src="./event/bgmi.png" alt="BGMI">
+                </div>
+                
+            </template>
+            
+            <!-- ✅ REQUIRED OVERLAY (ONE TIME ONLY) -->
+            <div id="BGMIPopup" class="jumanji-overlay"></div>
+
+        
+
+
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+                <h3>FREE FIRE</h3>
+                <p>Play fast-paced survival battles and show your shooting skills.</p>
+                <p class="members">Members: 3-4</p>
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openFreeFire()">Explore</button>
+                </div>
+            </div>
+            <template id="FreeFireTemplate">
+
+    <div class="popup-left">
+
+        <h2>FREE FIRE</h2>
+        <p>
+        Play fast-paced survival battles and show your shooting skills.
+        </p>
+
+        <h3>GENERAL INFORMATION</h3>
+        <ul>
+            <li>Match Type: Custom Room.</li>
+            <li>Game Mode: Battle Royale.</li>
+            <li>Team Type: Squad (4 Players).</li>
+            <li>Total Teams: 12 (48 Players).</li>
+            <li>Perspective: TPP.</li>
+            <li>Maps: Bermuda.</li>
+            <li>Server: India.</li>
+        </ul>
+
+        <h3>TOURNAMENT FORMAT</h3>
+        <ul>
+            <li>All matches will be played in custom rooms only.</li>
+            <li> Total matches will be announced before the tournament</li>
+            <li>Final rankings will be decided by:</li>
+            <li>Total Points</li>
+            <li>Total Kills</li>
+            <li>Best Match Placement</li>
+        </ul>
+
+        <h3>OFFICIAL FREE FIRE POINT SYSTEM</h3>
+        <li>Placement Points</li>
+                    <table>
+                        <tr>
+                            <th>RANK</th>
+                            <th>POINT</th>
+                        </tr>
+                        <tr>
+                            <td>1st</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>4th</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5th</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>6th</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>7th</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>8th</td>
+                            <td>3</td>
+                        </tr>
+                        <TR>
+                            <td>9th</td>
+                            <td>2</td>
+                        </TR><TR>
+                            <td>10th</td>
+                            <td>1</td>
+                        </TR><TR>
+                            <td>11-12th</td>
+                            <td>0</td>
+                        </TR>
+                    </table>
+                <Li>Kill points:</Li>
+                <ol>
+                    <li>1 kill = 1 point.</li>
+                    <li>No kill limit.</li>
+                </ol>
+                <li>Match score formula : Total score = Placement points + Kill points</li>
+        </ul>
+      <h3>ROOM & MATCH RULES</h3>
+                    <ul>
+                        <li>Room ID & Password will be shared 10–15 minutes before match</li>
+                            <li>Players must join with:</li>                        
+                            <ol>
+                            <li>Correct IGN as registered.</li>
+                            <li>Correct team name as registered.</li>
+                        </ol>
+                        <li>Late joining is not allowed.</li>
+                        <li>Once the match starts, no re-entry.</li>
+                        
+                      
+                    <h3>PLAYER & TEAM RULES</h3>
+                    <ul>
+                        <li>Only registered players are allowed to play.</li>
+                        <li>Substitutes must be informed before the match.</li>
+                        <li>Minimum 3 players required to start a match.</li>
+                        <li>Playing for multiple teams is strictly prohibited.</li>
+                    </ul>
+                    <h3>FAIR PLAY & CHEATING POLICY</h3>
+                    <ul>
+                        <li>Strictly NOT allowed:</li>
+                        <ol>
+                            <li>Hacks, mods, scripts, or third-party apps.</li>
+                            <li>Exploiting glitches or bugs.</li>
+                            <li>Ghosting or stream sniping.</li>
+                            <li>Teaming with other squads.</li>
+                        </ol>
+                        <li>Emulator usage :</li>
+                        <ol>
+                            <li>Allowed only if explicitly permitted by organizer.</li>
+                        </ol>
+                        <li>Punishment</li>
+                        <ol>
+                            <li>Immediate disqualification.</li>
+                            <li>Ban from current and future events.</li>
+                        </ol>
+                    
+                    <h3>DISCONNECT & TECHNICAL ISSUES</h3>
+                    <ul>
+                        <li>Internet issues are player responsibility.</li>
+                        <li>No rematch for :</li>
+                        <ol>
+                            <li>Lag.</li>
+                            <li>Game crash.</li>
+                            <li>Network failure.</li>
+                        </ol>
+                        <li>If server issue affects many teams → rematch.</li>
+                        <li>Organizer's decision is final.</li>
+                        
+                    </ul><h3>SPECTATING & STREAMING</h3>
+                    <ul>
+                        <li>Only official spectators allowed in room.</li>
+                    </ul>
+                    
+                    <h3>CONDUCT & DISCIPLINE</h3>
+                    <ul>
+                        <li> Respect all players and admins.</li>
+                        <li>No abusive language or toxic behavior.</li>
+                        <li>Any misconduct may lead to:</li>
+                        <ol>
+                            <li>Warning.</li>
+                            <li>Point deduction</li>
+                            <li>Match disqualification</li>
+                        </ol>
+                    </ul>
+                    <h3>ORGANIZER RIGHTS</h3>
+                    <ul>
+                        <li>Organizers reserve the right to :</li>
+                        <ol>
+                            <li> Modify rules if required.</li>
+                            <li>Decide penalties and disputes.</li>
+                            <li>Cancel or restart matches if necessary.</li>
+                        </ol>
+                        <li>Organizer’s decision is final and binding</li>
+                    </ul>
+            <h3>RULE ACCEPTANCE</h3>
+            <ul>
+                <li>By participating in the tournament, all players and teams agree to follow the rules mentioned above.</li>
+            </ul>
+        
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeFreeFire()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/freefire.png" alt="Free Fire">
+    </div>
+
+    </template>
+
+<!-- ✅ REQUIRED OVERLAY (ONE TIME ONLY) -->
+<div id="FreeFirePopup" class="jumanji-overlay"></div>
+<!-- free fire end -->      
+
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+                <h3>VALORANT</h3>
+                <p>Play tactical team-based combat using unique agents and abilities.</p>
+                <p class="members">Members: 5</p>
+                <div style="display:flex; gap:10px;">
+                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                    <button class="join-btn" onclick="openValorant()">Explore</button>
+                </div>
+            </div>
+<template id="ValorantTemplate">
+    <div class="popup-left">
+
+        <h2>VALORANT</h2>
+        <p>
+            A tactical 5v5 shooter where teamwork, strategy, and precise aim decide victory.
+        </p>
+
+        <h3>GENERAL INFORMATION</h3>
+        <ul>
+            <li>Match Type: Custom Game</li>
+            <li>Game Mode: Standard (Search & Destroy)</li>
+            <li>Team Size: 5 vs 5</li>
+            <li>Server: Mumbai</li>
+            <li>Voice Chat: In-game / Discord (team-only)</li>
+        </ul>
+
+        <h3>TOURNAMENT FORMAT</h3>
+        <ul>
+            <li>Format (announced before event):</li>
+            <ul>
+                <li>Single Elimination</li>
+                <li>Double Elimination</li>
+                <li>League + Playoffs</li>
+            </ul>
+            <li>Match Structure:</li>
+            <ul>
+                <li>Early Rounds: Best of 1 (BO1)</li>
+                <li>Semi-Finals & Finals: Best of 3 (BO3)</li>
+            </ul>
+        </ul>
+
+        <h3>MAP POOL</h3>
+        <ul>
+            <li>Ascent</li>
+            <li>Bind</li>
+            <li>Haven</li>
+            <li>Split</li>
+            <li>Lotus</li>
+            <li>Icebox</li>
+        </ul>
+
+        <h3>MATCH SETTINGS</h3>
+        <ul>
+            <li>Tournament Mode: ON</li>
+            <li>Cheats: OFF</li>
+            <li>Overtime: ON</li>
+            <li>Technical Pauses: Allowed</li>
+        </ul>
+
+        <h3>PAUSE RULES</h3>
+        <ul>
+            <li>1 Technical Timeout per team per map</li>
+            <li>Maximum duration: 5 minutes</li>
+            <li>Fake or excessive pauses may result in penalties</li>
+        </ul>
+
+        <h3>DISCONNECT & TECHNICAL ISSUES</h3>
+        <ul>
+            <li>Player internet or PC issues are team responsibility</li>
+            <li>No rematch for lag, crash, or power failure</li>
+            <li>Server-wide issues may result in restart or rematch</li>
+        </ul>
+
+        <h3>FAIR PLAY & CHEATING POLICY</h3>
+        <ul>
+            <li>Strictly prohibited:</li>
+            <ul>
+                <li>Hacks, cheats, scripts, or macros</li>
+                <li>Third-party software</li>
+                <li>Exploiting bugs or glitches</li>
+                <li>Ghosting or stream sniping</li>
+                <li>Smurfing or account sharing</li>
+            </ul>
+            <li>Penalty: Immediate disqualification & ban</li>
+        </ul>
+
+        <h3>PLAYER CONDUCT</h3>
+        <ul>
+            <li>Respect all players, admins, and organizers</li>
+            <li>No abusive language or toxic behavior</li>
+            <li>Violations may lead to warnings, penalties, or disqualification</li>
+        </ul>
+
+        <h3>ORGANIZER RIGHTS</h3>
+        <ul>
+            <li>Organizers may modify rules if required</li>
+            <li>All decisions by organizers are final and binding</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeValorant()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/valorant.png" alt="Valorant">
+    </div>
+</template>
+
+<div id="ValorantPopup" class="jumanji-overlay"></div>
+
+
+        
+        
+        
+        
+        
+            
+<br>
+<!-- ================= DND CLUB ================= -->
+<div class="levels-wrapper">
+    <h2 class="group-header">DND Club</h2>
+    <div class="events-grid single">
+        
+        <div class="event-card">
+            <span class="event-type">DESIGN WORKSHOP</span>
+            <h3>CANVA DESIGN WORKSHOP</h3>
+            <p>
+                Hands-on workshop introducing graphic design fundamentals using Canva,
+                including layouts, typography, colors, and real-world design practices.
+            </p>
+            <p class="members">Members: Solo</p>
+            <div class="btn-row">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openCanvaWorkshop()">Explore</button>
+            </div>
         </div>
         
-        
-        <!-- ================= UDAAN CLUB ================= -->
-        <h2 class="group-header">Udaan Club</h2>
-        <div class="events-grid single">
-            
-            <div class="event-card">
-                <span class="event-type">HOVERCRAFT</span>
-                <h3>HOVERCRAFT</h3>
-                <p>Build and race a hovercraft.</p>
-                <p class="members">Members: 4</p>
-                <div class="btn-row">
-                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                    <button class="join-btn" onclick="openHovercraft()">Explore</button>
-                </div>
-            </div>
-            
+    </div>
+</div>
+
+<template id="canvaWorkshopTemplate">
+    <div class="popup-left">
+        <h2>CANVA DESIGN WORKSHOP</h2>
+
+        <p>
+            The Designing and Decorative Club is organizing a hands-on Canva Design
+            Workshop at <strong>AADHAR 2026</strong>, aimed at introducing participants
+            to the fundamentals of graphic design using Canva.
+        </p>
+
+        <h3>WHAT YOU WILL LEARN</h3>
+        <ul>
+            <li>Overview of Canva interface</li>
+            <li>Essential design tools and features</li>
+            <li>Layout and alignment principles</li>
+            <li>Typography basics</li>
+            <li>Effective color usage</li>
+        </ul>
+
+        <h3>ADVANCED INSIGHTS</h3>
+        <ul>
+            <li>Tips to use Canva efficiently</li>
+            <li>Guidance on Canva Pro features</li>
+            <li>Design shortcuts and best practices</li>
+        </ul>
+
+        <h3>LIVE SHOWCASE</h3>
+        <ul>
+            <li>Real-world design examples</li>
+            <li>Demonstration of existing designs</li>
+            <li>Practical design workflow explanation</li>
+        </ul>
+
+        <h3>PARTICIPATION DETAILS</h3>
+        <ul>
+            <li>Solo participation</li>
+            <li>No prior design experience required</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeCanvaWorkshop()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
         </div>
     </div>
-        
-        
-    <!-- ================= HAYAGRIVA CLUB ================= -->
-      <div class="levels-wrapper">
-          <h2 class="group-header">Hayagriva Club</h2>
-          <div class="events-grid">
-              
-              <div class="event-card single">
-                  <span class="event-type">GO KARTS</span>
-                  <h3>GO KARTS</h3>
-                  <p>Show off your driving skills.</p>
-                  <p class="members">Members: Solo</p>
-                  <div class="btn-row">
-                      <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                      <button class="join-btn" onclick="openGoKarts()">Explore</button>
-                    </div>
-                </div>
-                
-            </div>
-        </div>    
+
+    <div class="popup-right">
+        <img src="./event/canva.jpg" alt="Canva Design Workshop">
+    </div>
+</template>
+
+<div id="canvaWorkshopPopup" class="jumanji-overlay"></div>
+
+<br>
             
-        <!-- ================= CYFOX CLUB ================= -->
-            <div class="levels-wrapper">
-                <h2 class="group-header">Cyfox Club</h2>
-                
-                <div class="events-grid">
-                    
-                    <div class="event-card">
-                        <h3>CTF</h3>
-                        <p>Capture the flag competition.</p>
-                        <p class="members">Members: 3</p>
-                        <div class="btn-row">
-                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openCtf()">Explore</button>
-                        </div>
-                    </div>
-                    
-                    <div class="event-card">
-                        <h3>Software Projects</h3>
-                        <p>Showcase your software project.</p>
-                        <p class="members">Members: 4</p>
-                        <div class="btn-row">
-                            <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                            <button class="join-btn" onclick="openSoftwareProjects()">Explore</button>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                
-            </div>  
-            <!-- ================= DND CLUB ================= -->
-                <div class="levels-wrapper">
-                    <h2 class="group-header">DND Club</h2>
-                    <div class="events-grid single">
-                        
-                        <div class="event-card">
-                            <h3>Photoshop Workshop</h3>
-                            <p>Learn Photoshop tricks.</p>
-                            <p class="members">Members: Solo</p>
-                            <div class="btn-row">
-                                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                                <button class="join-btn" onclick="openPhotoshop()">Explore</button>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>  
-                <!-- ================= HIS CLUB ================= -->
-                    <div class="levels-wrapper">
-                        <h2 class="group-header">HIS Club</h2>
-                        <div class="events-grid single">
-                            
-                            <div class="event-card">
-                                <h3>24 Hour Hackathon</h3>
-                                <p>Code non-stop for 24 hours.</p>
-                                <p class="members">Members: 4</p>
-                                <div class="btn-row">
-                                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                                    <button class="join-btn" onclick="openHackathons()">Explore</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>  
+        <!-- ================= OTHER ACTIVITIES ================= -->
+<div class="levels-wrapper">
+    <h2 class="group-header">Other Activities</h2>
+
+    <div class="events-grid">
+
+        <!-- JUMANJI BOARD -->
+        <div class="event-card">
+            <span class="event-type">FUN EVENT</span>
+            <h3>JUMANJI BOARD</h3>
+            <p>Step into a life-sized adventure board filled with challenges and surprises.</p>
+            <p class="members">Members: 3–5</p>
+            <div class="btn-row">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openJumanjiBoard()">Explore</button>
+            </div>
+        </div>
+
+        <!-- TREASURE HUNT -->
+        <div class="event-card">
+            <span class="event-type">ADVENTURE</span>
+            <h3>TREASURE HUNT</h3>
+            <p>Crack clues, solve puzzles, and race to uncover the hidden treasure.</p>
+            <p class="members">Members: 3–4</p>
+            <div class="btn-row">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openTreasureHunt()">Explore</button>
+            </div>
+        </div>
+
+        <!-- HUMAN BINGO -->
+        <div class="event-card">
+            <span class="event-type">FUN GAME</span>
+            <h3>HUMAN BINGO</h3>
+            <p>Complete real-life tasks and fill your bingo card before anyone else.</p>
+            <p class="members">Members: Solo</p>
+            <div class="btn-row">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openHumanBingo()">Explore</button>
+            </div>
+        </div>
+
+        <!-- SPUD GUN -->
+        <div class="event-card">
+            <span class="event-type">MECHANICAL</span>
+            <h3>SPUD GUN</h3>
+            <p>Build and operate a potato launcher to hit targets with precision.</p>
+            <p class="members">Members: 2–3</p>
+            <div class="btn-row">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openSpudGun()">Explore</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JUMANJI BOARD TEMPLATE -->
+<template id="jumanjiBoardTemplate">
+    <div class="popup-left">
+        <h2>JUMANJI BOARD</h2>
+        <p>A life-sized board game where every move triggers a challenge.</p>
+
+        <h3>TEAM DETAILS</h3>
+        <ul>
+            <li>Team Size: 3–5 members</li>
+            <li>Inter-college teams not allowed</li>
+        </ul>
+
+        <h3>GAME FORMAT</h3>
+        <ul>
+            <li>Board-based challenges</li>
+            <li>Task completion per move</li>
+            <li>Fastest team wins</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeJumanjiBoard()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/jumanji.jpg" alt="Jumanji Board">
+    </div>
+</template>
+<div id="jumanjiBoardPopup" class="jumanji-overlay"></div>
+
+
+<!-- TREASURE HUNT TEMPLATE -->
+<template id="treasureHuntTemplate">
+    <div class="popup-left">
+        <h2>TREASURE HUNT</h2>
+        <p>Follow clues across locations to reach the final treasure.</p>
+
+        <h3>TEAM DETAILS</h3>
+        <ul>
+            <li>Team Size: 3–4 members</li>
+            <li>No external help allowed</li>
+        </ul>
+
+        <h3>EVENT FORMAT</h3>
+        <ul>
+            <li>Multiple clue rounds</li>
+            <li>Time-based elimination</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeTreasureHunt()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/treasure hunt.jpg" alt="Treasure Hunt">
+    </div>
+</template>
+<div id="treasureHuntPopup" class="jumanji-overlay"></div>
+
+
+<!-- HUMAN BINGO TEMPLATE -->
+<template id="humanBingoTemplate">
+    <div class="popup-left">
+        <h2>HUMAN BINGO</h2>
+        <p>Complete fun real-life tasks to fill your bingo card.</p>
+
+        <h3>PARTICIPATION</h3>
+        <ul>
+            <li>Solo event</li>
+            <li>Limited slots</li>
+        </ul>
+
+        <h3>RULES</h3>
+        <ul>
+            <li>No cheating or fake claims</li>
+            <li>First valid bingo wins</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeHumanBingo()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/human bingo.jpg" alt="Human Bingo">
+    </div>
+</template>
+<div id="humanBingoPopup" class="jumanji-overlay"></div>
+
+
+<!-- SPUD GUN TEMPLATE -->
+<template id="spudGunTemplate">
+    <div class="popup-left">
+        <h2>SPUD GUN</h2>
+        <p>Launch potatoes to hit targets with accuracy and safety.</p>
+
+        <h3>TEAM DETAILS</h3>
+        <ul>
+            <li>Team Size: 2–3 members</li>
+            <li>One launcher per team</li>
+        </ul>
+
+        <h3>SCORING</h3>
+        <ul>
+            <li>Accuracy</li>
+            <li>Distance</li>
+            <li>Time efficiency</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeSpudGun()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+    </div>
+
+    <div class="popup-right">
+        <img src="./event/spud gun.jpg" alt="Spud Gun">
+    </div>
+</template>
+<div id="spudGunPopup" class="jumanji-overlay"></div>
+
 
 </section>
 
@@ -1138,7 +2210,7 @@ button>
 <!-- =================== TEMPLATES =================== -->
 <!-- ================================================= -->
 
-<template id="techQuizTemplate">
+<!-- <template id="techQuizTemplate">
   <div class="popup-left">
     <h2>TECH QUIZ</h2>
     <p>Fast-paced quiz testing technical knowledge.</p>
@@ -1146,37 +2218,98 @@ button>
       <button class="popup-btn" onclick="closeTechQuiz()">Close</button>
     </div>
   </div>
-</template>
 
-<template id="flashDesignTemplate">
+</template> -->
+
+<!-- <template id="flashDesignTemplate">
   <div class="popup-left">
     <h2>FLASH DESIGN</h2>
     <p>Create a design under time pressure.</p>
     <div class="popup-buttons">
       <button class="popup-btn" onclick="closeFlashDesign()">Close</button>
     </div>
-  </div>
+  </div> -->
+
+
 </template>
 
 <template id="hovercraftTemplate">
   <div class="popup-left">
     <h2>HOVERCRAFT</h2>
-    <p>Build and race a hovercraft.</p>
+    <p>
+        A hovercraft is an air-cushion vehicle that moves over land and water by riding on a thin layer of air. In student models, XPS or Depron foam is used for construction due to its lightweight, strength, and ease of fabrication. <br>br
+
+Air is forced beneath the craft using an electric fan to create lift, while a separate propulsion system provides forward motion and control. These hovercraft models are widely used in technical events and competitions to demonstrate basic principles of aerodynamics, thrust, stability, and lightweight design.
+    </p>
     <div class="popup-buttons">
       <button class="popup-btn" onclick="closeHovercraft()">Close</button>
     </div>
   </div>
+
+      <div class="popup-right">
+        <img src="./event/hovercraft.jpeg" alt="Hovercraft">
+    </div>
+
 </template>
 
 <template id="goKartsTemplate">
-  <div class="popup-left">
-    <h2>GO KARTS</h2>
-    <p>Solo go-kart racing event.</p>
-    <div class="popup-buttons">
-      <button class="popup-btn" onclick="closeGoKarts()">Close</button>
+    <div class="popup-left">
+
+        <h2>GO KARTS</h2>
+
+        <p>
+            Go Karts is a high-adrenaline racing event where participants compete in
+            solo races to showcase their driving skills, control, and speed on a
+            specially designed track.
+        </p>
+
+        <h3>PARTICIPATION DETAILS</h3>
+        <ul>
+            <li><strong>Solo event</strong>.</li>
+            <li>Each participant will be provided with a go-kart.</li>
+        </ul>
+
+        <h3>TRACK DETAILS</h3>
+        <ul>
+            <li>Closed circuit track designed for safety.</li>
+            <li>Track may include sharp turns and speed zones.</li>
+            <li>Practice lap may be provided before the race.</li>
+        </ul>
+
+        <h3>RACE FORMAT</h3>
+        <ul>
+            <li>Each participant will get a fixed number of laps.</li>
+            <li>Timing will be recorded electronically.</li>
+            <li>Fastest lap time determines the winner.</li>
+        </ul>
+
+        <h3>SAFETY RULES</h3>
+        <ul>
+            <li>Wearing safety helmet is mandatory.</li>
+            <li>Reckless driving may lead to disqualification.</li>
+            <li>Participants must follow marshals’ instructions.</li>
+        </ul>
+
+        <h3>WINNER DECLARATION</h3>
+        <ul>
+            <li>Winner is decided based on minimum lap time.</li>
+            <li>In case of tie, an additional lap may be conducted.</li>
+        </ul>
+
+        <div class="popup-buttons">
+            <button class="popup-btn" onclick="closeGoKarts()">Close</button>
+            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+        </div>
+
     </div>
-  </div>
+
+    <div class="popup-right">
+        <img src="./event/go karts.jpg" alt="Go Karts">
+    </div>
 </template>
+
+<div id="goKartsPopup" class="jumanji-overlay"></div>
+
 
 
 <!-- ================= POPUP OVERLAYS ================= -->
@@ -1296,9 +2429,10 @@ button>
           <div class="icon-box">📞</div>
           <div><h4>EMERGENCY LINE</h4><p><br>
             <a href="tel:+919667554895" style="color:inherit; text-decoration:underline;">+91 9667554895 - Lucky Pandey</a><br><br>
-            <a href="tel:+919079858676" style="color:inherit; text-decoration:underline;">+91 9079858676 - Harsh Danwar</a><br><br>
             <a href="tel:+919462124170" style="color:inherit; text-decoration:underline;">+91 9462124170 - Prachi Garg</a><br><br>
-            <a href="tel:+917041274329" style="color:inherit; text-decoration:underline;">+91 7041274329 - Nayan Mathur</a>
+            <a href="tel:+919079858676" style="color:inherit; text-decoration:underline;">+91 9079858676 - Harsh Danwar</a><br><br>
+            <a href="tel:+917041274329" style="color:inherit; text-decoration:underline;">+91 7041274329 - Nayan Mathur</a><br><br>
+            <a href="tel:+917626989996" style="color:inherit; text-decoration:underline;">+91 7626989996 - Manan Gupta</a>
         </p></div>
         </div>
       </aside>
@@ -1319,10 +2453,27 @@ button>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>CONTACT HQ</h3>
-                <p>📧 zircon.aadhar@poornima.org</p>
-                <p>📞 +91 9876543210</p>
-                <p>📍 Poornima College of Engineerng, Jaipur</p>
+
+                <a href="mailto:zircon.aadhar@poornima.org" class="footer-link">
+                    📧 zircon.aadhar@poornima.org
+                </a>
+
+                <a href="tel:+919667554895" class="footer-link">
+                    📞 +91 96675 54895
+                </a>
+
+                <p>📍 Poornima College of Engineering, Jaipur</p>
+
+                <a href="https://www.instagram.com/aadharpoornima" target="_blank" class="footer-link">
+                    📸 Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/in/zircon-club/" target="_blank" class="footer-link">
+                    💼 LinkedIn
+                </a>
             </div>
+ 
+
             <div class="footer-section">
                 <h3>QUICK LINKS</h3>
                 <a onclick="navigateTo('home')">Home</a>
@@ -1342,21 +2493,6 @@ button>
     </footer>
 
     <div class="sound-toggle">AUDIO [OFF]</div>
-
-    <!-- POPUP (one unified popup) -->
-    <div id="popup-box" class="popup-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="popup-box" role="document">
-            <h2 id="popup-title"></h2>
-            <p id="popup-desc"></p>
-            <div style="display:flex; gap:10px; justify-content:center; margin-top:1rem;">
-                <button onclick="closePopup()" style="padding:10px 18px; background:transparent; border:1px solid var(--color-primary); color:var(--color-primary); cursor:pointer;">Close</button>
-                <button onclick="navigateTo('register'); closePopup();" style="padding:10px 18px; background:var(--color-primary); border:none; color:#000; cursor:pointer;">Register</button>
-            </div>
-        </div>
-    </div>
-
-
-
 
 
 </body>

@@ -288,7 +288,69 @@ function openGoKarts() {
 function closeGoKarts() {
     closePopup("goKartsPopup");
 }
+// bgmi
+function openBGMI() {
+    openPopup("BGMIPopup", "BGMITemplate");
+}
+function closeBGMI() {
+    closePopup("BGMIPopup");
+}
+// FREE FIRE
+function openFreeFire() {
+    openPopup("FreeFirePopup", "FreeFireTemplate");
+}
+function closeFreeFire() {
+    closePopup("FreeFirePopup");
+}
 
+// valorant
+function openValorant() {
+    openPopup("ValorantPopup", "ValorantTemplate");
+}
+function closeValorant() {
+    closePopup("ValorantPopup");
+    
+}
+
+/* JUMANJI BOARD */
+function openJumanjiBoard() {
+    openPopup("jumanjiBoardPopup", "jumanjiBoardTemplate");
+}
+function closeJumanjiBoard() {
+    closePopup("jumanjiBoardPopup");
+}
+
+/* TREASURE HUNT */
+function openTreasureHunt() {
+    openPopup("treasureHuntPopup", "treasureHuntTemplate");
+}
+function closeTreasureHunt() {
+    closePopup("treasureHuntPopup");
+}
+
+/* HUMAN BINGO */
+function openHumanBingo() {
+    openPopup("humanBingoPopup", "humanBingoTemplate");
+}
+function closeHumanBingo() {
+    closePopup("humanBingoPopup");
+}
+
+/* SPUD GUN */
+function openSpudGun() {
+    openPopup("spudGunPopup", "spudGunTemplate");
+}
+function closeSpudGun() {
+    closePopup("spudGunPopup");
+}
+
+function openCanvaWorkshop() {
+    openPopup("canvaWorkshopPopup", "canvaWorkshopTemplate");
+}
+
+function closeCanvaWorkshop() {
+    closePopup("canvaWorkshopPopup");
+}
 
 /* =====================================================
    OPTIONAL: CLICK OUTSIDE TO CLOSE
@@ -300,3 +362,29 @@ document.addEventListener('click', (e) => {
         document.body.classList.remove('popup-open');
     }
 });
+
+
+
+
+/* ===== GENERIC POPUP HANDLER (SAME STYLE AS ROBO WAR) ===== */
+function openPopupById(templateId, popupId) {
+    const template = document.getElementById(templateId);
+    const popup = document.getElementById(popupId);
+
+    if (!template || !popup) {
+        console.error("Popup template or container missing:", templateId, popupId);
+        return;
+    }
+
+    popup.innerHTML = "";
+    popup.appendChild(template.content.cloneNode(true));
+    popup.classList.add("active");
+    document.body.classList.add("popup-open");
+}
+
+function closePopupById(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.classList.remove("active");
+    popup.innerHTML = "";
+    document.body.classList.remove("popup-open");
+}

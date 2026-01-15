@@ -305,10 +305,12 @@
 .events-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(480px, 1fr));
-    gap: 40px;
+    gap: 24px;
     max-width: 1200px;
     margin: 0 auto 100px;
+    margin-bottom: 50px;
 }
+
 
 
 /* Single card → align to START (like Zircon) */
@@ -523,10 +525,33 @@
         .btn-submit { width:100%; background:linear-gradient(to right, var(--color-primary), #d97706); color:black; font-weight:bold; padding:1rem; margin-top:1rem; box-shadow:0 0 0px rgba(234,179,8,0.3); }
         .btn-submit:hover { box-shadow:0 0 0px rgba(234,179,8,0.5); transform:translateY(-2px); }
 
-        footer { margin-top:20px; border-top:2px solid rgba(234,179,8,0.2); background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding:2rem 2rem; position:relative; z-index:0; }
+        footer { margin-top:20px; border-top:2px solid rgba(234,179,8,0.2); background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding:1.2rem 1.5rem; position:relative; z-index:0; }
         .footer-content { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
         .footer-section h3 { color:var(--color-primary); margin-bottom:1.5rem; text-shadow:0 0 15px rgba(234,179,8,0.4); font-size:1.2rem; }
         .footer-section a, .footer-section p { color:#a7f3d0; text-decoration:none; margin-bottom:.8rem; font-size:.95rem; transition:color .3s; display:block; }
+        /* Footer link cursor */
+.footer-section a {
+    cursor: pointer;
+}
+/* Footer clickable items */
+.footer-link {
+    cursor: pointer;
+    display: block;
+    color: #a7f3d0;
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 6px rgba(234,179,8,0.4);
+}
+.footer-section p {
+    cursor: default; /* keep normal */
+}
+
+
         .footer-bottom { max-width:1200px; margin:2rem auto 0; padding-top:1rem; border-top:1px solid rgba(234,179,8,0.1); text-align:center; color:#6ee7b7; font-size:.85rem; }
 
         .sound-toggle { position:fixed; bottom:1rem; right:1rem; font-family:monospace; font-size:.8rem; color:rgba(234,179,8,0.5); z-index:100; }
