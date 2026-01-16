@@ -297,6 +297,79 @@
     color: var(--color-primary);
     text-shadow: 0 0 10px rgba(234,179,8,0.4);
 }
+/* =======================
+   MOBILE RESPONSIVE PATCH
+======================= */
+
+@media (max-width: 900px) {
+
+  /* Navbar spacing fix */
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Logo resize for mobile */
+  .logo-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .mobile-menu-btn {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+
+/* Mobile menu slide fix */
+@media (max-width: 900px) {
+  .mobile-menu {
+    transform: translateY(-100%);
+  }
+  .mobile-menu.open {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Countdown smaller */
+@media (max-width: 768px) {
+  .countdown-number {
+    font-size: 2rem;
+  }
+  .countdown-label {
+    font-size: 1rem;
+  }
+}
+
+
+/* Two-column about section → single column */
+@media (max-width: 900px) {
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* Events grid → single column */
+@media (max-width: 900px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
 
     
 
@@ -305,12 +378,10 @@
 .events-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(480px, 1fr));
-    gap: 24px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto 100px;
-    margin-bottom: 50px;
 }
-
 
 
 /* Single card → align to START (like Zircon) */
@@ -525,33 +596,10 @@
         .btn-submit { width:100%; background:linear-gradient(to right, var(--color-primary), #d97706); color:black; font-weight:bold; padding:1rem; margin-top:1rem; box-shadow:0 0 0px rgba(234,179,8,0.3); }
         .btn-submit:hover { box-shadow:0 0 0px rgba(234,179,8,0.5); transform:translateY(-2px); }
 
-        footer { margin-top:20px; border-top:2px solid rgba(234,179,8,0.2); background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding:1.2rem 1.5rem; position:relative; z-index:0; }
+        footer { margin-top:20px; border-top:2px solid rgba(234,179,8,0.2); background: rgba(0,0,0,0.6); backdrop-filter: blur(10px); padding:2rem 2rem; position:relative; z-index:0; }
         .footer-content { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
         .footer-section h3 { color:var(--color-primary); margin-bottom:1.5rem; text-shadow:0 0 15px rgba(234,179,8,0.4); font-size:1.2rem; }
         .footer-section a, .footer-section p { color:#a7f3d0; text-decoration:none; margin-bottom:.8rem; font-size:.95rem; transition:color .3s; display:block; }
-        /* Footer link cursor */
-.footer-section a {
-    cursor: pointer;
-}
-/* Footer clickable items */
-.footer-link {
-    cursor: pointer;
-    display: block;
-    color: #a7f3d0;
-    text-decoration: none;
-    margin-bottom: 0.4rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.footer-link:hover {
-    color: var(--color-primary);
-    text-shadow: 0 0 6px rgba(234,179,8,0.4);
-}
-.footer-section p {
-    cursor: default; /* keep normal */
-}
-
-
         .footer-bottom { max-width:1200px; margin:2rem auto 0; padding-top:1rem; border-top:1px solid rgba(234,179,8,0.1); text-align:center; color:#6ee7b7; font-size:.85rem; }
 
         .sound-toggle { position:fixed; bottom:1rem; right:1rem; font-family:monospace; font-size:.8rem; color:rgba(234,179,8,0.5); z-index:100; }
@@ -779,105 +827,6 @@ body.popup-open {
 .popup-btn:hover { transform: translateY(-2px); }
 
 
-/* ================= MOBILE (≤ 768px) ================= */
-@media (max-width: 768px) {
-
-    /* Global spacing */
-    main {
-        padding: 90px 16px 0;
-    }
-
-    /* HERO */
-    .hero-content {
-        padding: 10vh 0;
-    }
-    .sub-title {
-        font-size: 1rem;
-        letter-spacing: 0.3em;
-    }
-    .main-title {
-        font-size: 2.4rem;
-        line-height: 1.2;
-    }
-    .hero-text {
-        font-size: 1rem;
-    }
-
-    /* EVENTS GRID → single column */
-    .events-grid,
-    .events-grid.single {
-        grid-template-columns: 1fr;
-        justify-items: stretch;
-        gap: 24px;
-        margin-bottom: 60px;
-    }
-
-    /* EVENT CARD */
-    .event-card {
-        max-width: 100%;
-        min-height: auto;
-        padding: 1.5rem;
-    }
-
-    .event-card h3 {
-        font-size: 1.4rem;
-    }
-
-    .event-card p {
-        font-size: 0.9rem;
-    }
-
-    /* BUTTON ROW */
-    .btn-row,
-    .event-card > div {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .join-btn {
-        width: 100%;
-        text-align: center;
-        font-size: 0.9rem;
-    }
-
-    /* LEVEL HEADERS */
-    .group-header {
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 50px 0 20px;
-    }
-
-    /* TEAM GRID */
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-
-    /* CONTACT */
-    .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    /* FOOTER */
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    /* POPUP FIX */
-    .jumanji-popup {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 20px;
-        max-height: 90vh;
-    }
-
-    .popup-right img {
-        max-height: 200px;
-    }
-}
-
 
 /* ================= TABLET (769px – 1024px) ================= */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -922,3 +871,189 @@ body.popup-open {
     }
 }
 
+/* ==================================================
+   FINAL MASTER MOBILE PATCH – AADHAR XIV
+   Place this at END of CSS
+================================================== */
+
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+  nav {
+    padding: 0.4rem 1rem;
+  }
+
+  .logo-avatar {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 2rem;
+  }
+
+  /* ===== MAIN GLOBAL SPACING ===== */
+  main {
+    padding: 80px 15px 0;
+  }
+
+  /* ===== HERO ===== */
+  .hero-content {
+    padding: 6vh 0;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+  }
+
+  .main-title {
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* ===== COUNTDOWN ===== */
+  .countdown-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.9rem;
+  }
+
+  /* ===== TWO COLUMN INLINE GRIDS FIX ===== */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* ===== EVENTS ===== */
+  .levels-wrapper {
+    padding: 0 10px;
+  }
+
+  .events-grid,
+  .events-grid.single {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .event-card {
+    max-width: 100%;
+    padding: 1.3rem;
+    min-height: auto;
+  }
+
+  .event-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .event-card p {
+    font-size: 0.9rem;
+  }
+
+  .event-card > div,
+  .btn-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .join-btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .group-header {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 40px 0 15px;
+  }
+
+  /* ===== ABOUT ===== */
+  #about .section-header {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  #about div[style*="max-width:900px"] {
+    margin: 0 10px !important;
+    padding: 1.2rem !important;
+  }
+
+  #about h2 {
+    font-size: 1.2rem !important;
+  }
+
+  #about p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  #about .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ===== TEAM ===== */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .avatar-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* ===== POPUP ===== */
+  .jumanji-popup {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    max-height: 90vh;
+  }
+
+  .popup-right img {
+    max-height: 180px;
+  }
+}
