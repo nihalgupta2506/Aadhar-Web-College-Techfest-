@@ -1057,3 +1057,22 @@ body.popup-open {
     max-height: 180px;
   }
 }
+
+.sound-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #eab308;
+  color: #eab308;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: 'Rye', serif;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(234,179,8,0.4);
+}
+.sound-toggle:hover {
+  background:#eab308;
+  color:#000;
+}

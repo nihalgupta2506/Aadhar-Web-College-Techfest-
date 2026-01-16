@@ -20,6 +20,13 @@
     <video class="bg-video" autoplay loop muted playsinline>
         <source src="./bg-video2.mp4" type="video/mp4">
     </video>
+    <audio id="bg-music" autoplay loop>
+  <source src="jumanji-theme.webm" type="audio/webm">
+</audio>
+
+<button id="soundToggle" class="sound-toggle" onclick="toggleSound()">
+  🔊 Sound On
+</button>
     <div class="bg-overlay"></div>
     <div class="fog-layer"></div>
     <div class="vine-container"></div>
@@ -466,15 +473,278 @@
         </section>
 
        <!-- EVENTS (detailed list) -->
-        <section id="events" class="page">
+<!-- EVENTS PAGE -->
+<section id="events" class="page">
   <h1 class="section-header">CHOOSE YOUR LEVEL</h1>
-<section >
+
+  <!-- ================= ZIRCON CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">Zircon Club</h2>
+    <div class="events-grid">
+
+      <div class="event-card">
+        <span class="event-type">ROBOTICS</span>
+        <h3>ROBO WAR</h3>
+        <p>Design and battle powerful robots in a combat arena.</p>
+        <p class="members">Members: 5–10</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openRoboWar()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">ROBOTICS</span>
+        <h3>ROBO SOCCER</h3>
+        <p>Score goals with your custom-built robot.</p>
+        <p class="members">Members: 3–5</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">ROBOTICS</span>
+        <h3>R.C CAR</h3>
+        <p>Design and race your remote-controlled car.</p>
+        <p class="members">Members: 2–4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openRCCar()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">ROBOTICS</span>
+        <h3>COZMO CLENCH</h3>
+        <p>Fun interactive robotic gripping challenge.</p>
+        <p class="members">Members: 2–4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openCozmoClench()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">ROBOTICS</span>
+        <h3>LINE FOLLOWER</h3>
+        <p>Autonomous robot path tracking challenge.</p>
+        <p class="members">Members: 1–2</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openLineFollower()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">OPEN INNOVATION</span>
+        <h3>OPEN INNOVATION</h3>
+        <p>Showcase your creative tech ideas.</p>
+        <p class="members">Members: 4–6</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openOpenInnovation()">Explore</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= UDAAN CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">Udaan Club</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <span class="event-type">HOVERCRAFT</span>
+        <h3>HOVERCRAFT</h3>
+        <p>Build and race a hovercraft.</p>
+        <p class="members">Members: 4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openHovercraft()">Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= HAYAGRIVA CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">Hayagriva Club</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <span class="event-type">Buggy Showcase</span>
+        <h3>Buggy Showcase</h3>
+        <p>Show off your driving skills.</p>
+        <p class="members">Members: Solo</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="openGoKarts()">Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= CODING CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">Coding Club</h2>
+    <div class="events-grid">
+
+      <div class="event-card">
+        <span class="event-type">TECH QUIZ</span>
+        <h3>TECH QUIZ</h3>
+        <p>Test your tech knowledge.</p>
+        <p class="members">Members: 2-4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openTechQuiz()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">FLASH DESIGN</span>
+        <h3>FLASH DESIGN</h3>
+        <p>UI/UX design under time pressure.</p>
+        <p class="members">Members: 2-4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openFlashDesign()">Explore</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= GDE CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">GDE Club</h2>
+    <div class="events-grid">
+
+      <div class="event-card">
+        <span class="event-type">E-SPORTS</span>
+        <h3>BGMI</h3>
+        <p>Battle royale squad combat.</p>
+        <p class="members">Members: 3–4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openBGMI()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">E-SPORTS</span>
+        <h3>FREE FIRE</h3>
+        <p>Fast-paced survival battles.</p>
+        <p class="members">Members: 3–4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openFreeFire()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">E-SPORTS</span>
+        <h3>VALORANT</h3>
+        <p>Tactical 5v5 agent combat.</p>
+        <p class="members">Members: 5</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openValorant()">Explore</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= DND CLUB ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">DND Club</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <span class="event-type">WORKSHOP</span>
+        <h3>CANVA DESIGN</h3>
+        <p>Hands-on design workshop.</p>
+        <p class="members">Members: Solo</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openCanvaWorkshop()">Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= OTHER ACTIVITIES ================= -->
+  <div class="levels-wrapper">
+    <h2 class="group-header">Other Activities</h2>
+    <div class="events-grid">
+
+      <div class="event-card">
+        <span class="event-type">FUN EVENT</span>
+        <h3>JUMANJI BOARD</h3>
+        <p>Life-sized jungle board adventure.</p>
+        <p class="members">Members: 3–5</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openJumanjiBoard()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">ADVENTURE</span>
+        <h3>TREASURE HUNT</h3>
+        <p>Crack clues across campus.</p>
+        <p class="members">Members: 3–4</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openTreasureHunt()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">FUN GAME</span>
+        <h3>HUMAN BINGO</h3>
+        <p>Answer, claim cubes, make a line.</p>
+        <p class="members">Members: 2 Players</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openHumanBingo()">Explore</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <span class="event-type">FUN ZONE</span>
+        <h3>SPUD GUN</h3>
+        <p>Hit the target in 3 chances.</p>
+        <p class="members">Members: Solo</p>
+        <div class="btn-row">
+          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="openSpudGun()">Explore</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+       
+
+        <!-- <section id="events" class="page">
+  <h1 class="section-header">CHOOSE YOUR LEVEL</h1>
+<section > -->
   <!-- ALL CLUB HEADERS + events-grid GO INSIDE HERE -->
 
-  <div class="levels-wrapper">
-      <!-- Zircon Club -->
+  <!-- <div class="levels-wrapper">
+      Zircon Club
       <h2 class="group-header">Zircon Club</h2>
-      <!-- robo soccer start-->
+      robo soccer start
       <div class="events-grid">
           <div class="event-card">
               <span class="event-type">ROBOTICS</span>
@@ -485,7 +755,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openRoboWar()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             
             <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
             <template id="roboSoccerTemplate">
@@ -588,7 +858,7 @@
             <!-- ========== POPUP OVERLAY ========== -->
             <div id="roboSoccerPopup" class="jumanji-overlay"></div>
             
-            <div class="event-card">
+            <!-- <div class="event-card">
                 <span class="event-type">ROBOTICS</span>
                  <h3>ROBO SOCCER</h3>
               <p>Program a robot to play soccer! Score goals and experience the excitement.</p>
@@ -597,7 +867,7 @@
                   <button class="join-btn" onclick="navigateTo('register')">Join</button>
                   <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             <template id="roboWarTemplate">
 
     <div class="popup-left">
@@ -699,7 +969,7 @@
             
             
             <!-- rc car start-->
-            <div class="event-card">
+            <!-- <div class="event-card">
                 <span class="event-type">ROBOTICS</span>
                 <h3>R.C CAR</h3>
                 <p>Design and race your own remote-controlled car. Speed, precision, and control are key!</p>
@@ -709,7 +979,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openRCCar()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             <template id="rcCarTemplate">
                 
                 <div class="popup-left">
@@ -809,7 +1079,7 @@
             
             
             <!--cozmo clench start-->
-            <div class="event-card">
+            <!-- <div class="event-card">
                 <span class="event-type">ROBOTICS</span>
                 <h3>COZMO CLENCH</h3>
                 <p>Engage with Cozmo robot challenges and complete fun interactive tasks. Show your creativity!</p>
@@ -818,7 +1088,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openCozmoClench()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             <template id="cozmoClenchTemplate">
                 
                 <div class="popup-left">
@@ -927,7 +1197,7 @@
 <!-- cozmo clench end-->
 
 <!-- line follower start-->
-<div class="event-card">
+<!-- <div class="event-card">
     <span class="event-type">ROBOTICS</span>
     <h3>LINE FOLLOWER</h3>
     <p>Build a robot that can follow a track. Test your precision engineering skills in this exciting challenge.</p>
@@ -936,7 +1206,7 @@
         <button class="join-btn" onclick="navigateTo('register')">Join</button>
         <button class="join-btn" onclick="openLineFollower()">Explore</button>
     </div>
-</div>
+</div> -->
 
 <template id="lineFollowerTemplate">
     <div class="popup-left">
@@ -1014,7 +1284,7 @@
 <!-- line followe end-->
 
 <!-- open inn  start-->
-<div class="event-card">
+<!-- <div class="event-card">
     <span class="event-type">OPEN INNOVATION</span>
     <h3>OPEN INNOVATION</h3>
     <p>Bring your innovative ideas to life in this creative competition! Compulsory 3 members, optional 2 members can join.</p>
@@ -1023,7 +1293,7 @@
         <button class="join-btn" onclick="navigateTo('register')">Join</button>
         <button class="join-btn" onclick="openOpenInnovation()">Explore</button>
     </div>
-</div>
+</div> -->
 
 <template id="openInnovationTemplate">
     <div class="popup-left">
@@ -1114,7 +1384,7 @@
 </div>
 
 <!-- ================= UDAAN CLUB ================= -->
-<h2 class="group-header">Udaan Club</h2>
+<!-- <h2 class="group-header">Udaan Club</h2>
 <div class="events-grid single">
     
     <div class="event-card">
@@ -1129,10 +1399,10 @@
     </div>
     
 </div>
-</div>
+</div> -->
 
 <!-- ================= HAYAGRIVA CLUB ================= -->
-  <div class="levels-wrapper">
+  <!-- <div class="levels-wrapper">
       <h2 class="group-header">Hayagriva Club</h2>
       <div class="events-grid">
           
@@ -1148,10 +1418,10 @@
             </div>
             
         </div>
-    </div>    
+    </div>     -->
 
 <!-- ================= CODING CLUB ================= -->
-  <div class="levels-wrapper">
+  <!-- <div class="levels-wrapper">
       <h2 class="group-header">Coding Club</h2>
       
       <div class="events-grid ">
@@ -1165,7 +1435,7 @@
          <button class="join-btn" onclick="navigateTo('register')">Join</button>
         <button class="join-btn" onclick="openTechQuiz()">Explore</button>
     </div>
-</div>
+</div> -->
 
 <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
 <template id="techQuizTemplate">
@@ -1265,7 +1535,7 @@
 <div id="techQuizPopup" class="jumanji-overlay"></div>
 <!-- tech quiz end -->
    <!-- flash design start-->
-            <div class="event-card">
+            <!-- <div class="event-card">
                 <span class="event-type">FLASH DESIGN</span>
                 <h3>FLASH DESIGN</h3>
                 <p>Design a website UI/UX project in limited time.</p>
@@ -1275,7 +1545,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openFlashDesign()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             <template id="flashDesignTemplate">
                 
                 <div class="popup-left">
@@ -1444,8 +1714,54 @@
             
 
         <!-- ================= GDES CLUB ================= -->
-<div class="levels-wrapper">
-    <h2 class="group-header">GDES Club</h2>
+
+<!-- ================= GDE CLUB ================= -->
+<!-- <div class="levels-wrapper">
+    <h2 class="group-header">GDE Club</h2>
+
+    <div class="events-grid">
+
+        BGMI
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+            <h3>BGMI</h3>
+            <p>Play intense battle royale matches with your squad.</p>
+            <p class="members">Members: 3–4</p>
+            <div style="display:flex; gap:10px;">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openBGMI()">Explore</button>
+            </div>
+        </div>
+
+        FREE FIRE
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+            <h3>FREE FIRE</h3>
+            <p>Fast-paced survival shooting battles.</p>
+            <p class="members">Members: 3–4</p>
+            <div style="display:flex; gap:10px;">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openFreeFire()">Explore</button>
+            </div>
+        </div>
+
+        VALORANT
+        <div class="event-card">
+            <span class="event-type">E-SPORTS</span>
+            <h3>VALORANT</h3>
+            <p>Tactical 5v5 combat with agents.</p>
+            <p class="members">Members: 5</p>
+            <div style="display:flex; gap:10px;">
+                <button class="join-btn" onclick="navigateTo('register')">Join</button>
+                <button class="join-btn" onclick="openValorant()">Explore</button>
+            </div>
+        </div>
+
+    </div> ✅ CLOSE events-grid
+</div>     ✅ CLOSE levels-wrapper -->
+
+<!-- <div class="levels-wrapper">
+    <h2 class="group-header">GDE Club</h2>
 
     <div class="events-grid">
         <div class="event-card">
@@ -1457,7 +1773,7 @@
          <button class="join-btn" onclick="navigateTo('register')">Join</button>
         <button class="join-btn" onclick="openBGMI()">Explore</button>
     </div>
-</div>
+</div> -->
 
 <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
 <template id="BGMITemplate">
@@ -1627,7 +1943,7 @@
         
 
 
-        <div class="event-card">
+        <!-- <div class="event-card">
             <span class="event-type">E-SPORTS</span>
                 <h3>FREE FIRE</h3>
                 <p>Play fast-paced survival battles and show your shooting skills.</p>
@@ -1636,7 +1952,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openFreeFire()">Explore</button>
                 </div>
-            </div>
+            </div> -->
             <template id="FreeFireTemplate">
 
     <div class="popup-left">
@@ -1822,7 +2138,7 @@
 <div id="FreeFirePopup" class="jumanji-overlay"></div>
 <!-- free fire end -->      
 
-        <div class="event-card">
+        <!-- <div class="event-card">
             <span class="event-type">E-SPORTS</span>
                 <h3>VALORANT</h3>
                 <p>Play tactical team-based combat using unique agents and abilities.</p>
@@ -1831,7 +2147,7 @@
                     <button class="join-btn" onclick="navigateTo('register')">Join</button>
                     <button class="join-btn" onclick="openValorant()">Explore</button>
                 </div>
-            </div>
+            </div> -->
 <template id="ValorantTemplate">
     <div class="popup-left">
 
@@ -1945,7 +2261,7 @@
             
 <br>
 <!-- ================= DND CLUB ================= -->
-<div class="levels-wrapper">
+<!-- <div class="levels-wrapper">
     <h2 class="group-header">DND Club</h2>
     <div class="events-grid single">
         
@@ -1964,7 +2280,7 @@
         </div>
         
     </div>
-</div>
+</div> -->
 
 <template id="canvaWorkshopTemplate">
     <div class="popup-left">
@@ -2021,12 +2337,12 @@
 <br>
             
         <!-- ================= OTHER ACTIVITIES ================= -->
-<div class="levels-wrapper">
+<!-- <div class="levels-wrapper">
     <h2 class="group-header">Other Activities</h2>
 
     <div class="events-grid">
 
-        <!-- JUMANJI BOARD -->
+        JUMANJI BOARD
         <div class="event-card">
             <span class="event-type">FUN EVENT</span>
             <h3>JUMANJI BOARD</h3>
@@ -2038,7 +2354,7 @@
             </div>
         </div>
 
-        <!-- TREASURE HUNT -->
+        TREASURE HUNT
         <div class="event-card">
             <span class="event-type">ADVENTURE</span>
             <h3>TREASURE HUNT</h3>
@@ -2050,7 +2366,7 @@
             </div>
         </div>
 
-        <!-- HUMAN BINGO -->
+        HUMAN BINGO
         <div class="event-card">
             <span class="event-type">FUN GAME</span>
             <h3>HUMAN BINGO</h3>
@@ -2062,7 +2378,7 @@
             </div>
         </div>
 
-        <!-- SPUD GUN -->
+        SPUD GUN
         <div class="event-card">
             <span class="event-type">MECHANICAL</span>
             <h3>SPUD GUN</h3>
@@ -2075,7 +2391,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
 
 <!-- JUMANJI BOARD TEMPLATE -->
 <template id="jumanjiBoardTemplate">
@@ -2131,41 +2447,42 @@
 <!-- TREASURE HUNT TEMPLATE -->
 <template id="treasureHuntTemplate">
     <div class="popup-left">
-        <h2>SPUD GUN</h2>
+        
+        
+    <h2>TREASURE HUNT</h2>
     <p>
-      A lighthearted target-hitting challenge.  
-      Simple, safe, and purely for fun.
-    </p>
-
-    <h3>PARTICIPATION</h3>
+    The jungle hides secrets across the campus. Decode clues, solve riddles,
+    race against time — only the cleverest explorers claim the treasure.
+</p>
+    
+    <h3>TEAM DETAILS</h3>
     <ul>
-      <li>Solo event</li>
-      <li>Open for all students</li>
+        <li>Team Size: 3–4 members</li>
+    <li>One phone allowed per team</li>
+    <li>No external assistance</li>
     </ul>
-
-    <h3>GAME FORMAT</h3>
+    
+    <h3>EVENT FORMAT</h3>
     <ul>
-      <li>Each participant gets 3 chances</li>
-      <li>Aim and hit the target</li>
-      <li>Higher accuracy = better score</li>
-    </ul>
-
-    <h3>EVENT NATURE</h3>
+    <li>Multiple clue-based rounds</li>
+    <li>Each clue leads to a hidden location</li>
+    <li>QR / puzzle / riddle unlocking next step</li>
+    <li>Slowest teams eliminated per round</li>
+</ul>
+    
+    <h3>WINNING CRITERIA</h3>
     <ul>
-      <li>Non-competitive fun activity</li>
-      <li>No elimination rounds</li>
-      <li>Pure entertainment zone</li>
+    <li>First team to reach final treasure wins</li>
+    <li>Time tracked for tie-breaker</li>
     </ul>
-
+    
     <h3>GENERAL RULES</h3>
     <ul>
-      <li>Only organizers handle the launcher</li>
-      <li>Safety distance must be maintained</li>
-      <li>Organizers’ decision final</li>
-    </ul>
-
-
-        <div class="popup-buttons">
+    <li>No damaging campus property</li>
+    <li>Stay within event boundaries</li>
+    <li>Fair play mandatory</li>
+</ul>
+<div class="popup-buttons">
             <button class="popup-btn" onclick="closeTreasureHunt()">Close</button>
             <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
         </div>
@@ -2181,16 +2498,16 @@
 <!-- HUMAN BINGO TEMPLATE -->
 <template id="humanBingoTemplate">
     <div class="popup-left">
-           <h2>HUMAN BINGO</h2>
-    <p>
-      A brain + fun twist on Tic-Tac-Toe.  
-      Answer questions, claim cubes, and form the winning line.
-    </p>
-
-    <h3>PLAYER FORMAT</h3>
+        <h2>HUMAN BINGO</h2>
+        <p>
+            A brain + fun twist on Tic-Tac-Toe.  
+            Answer questions, claim cubes, and form the winning line.
+        </p>
+        
+        <h3>PLAYER FORMAT</h3>
     <ul>
-      <li>2 players play per match</li>
-      <li>Game is based on X-O format</li>
+        <li>2 players play per match</li>
+        <li>Game is based on X-O format</li>
     </ul>
 
     <h3>GAME SETUP</h3>
@@ -2203,25 +2520,25 @@
 
     <h3>HOW TO PLAY</h3>
     <ul>
-      <li>Player chooses any cube</li>
-      <li>Answers the displayed question</li>
-      <li>On correct answer, player writes initials in the blank space</li>
-      <li>Next turn goes to opponent</li>
+        <li>Player chooses any cube</li>
+        <li>Answers the displayed question</li>
+        <li>On correct answer, player writes initials in the blank space</li>
+        <li>Next turn goes to opponent</li>
     </ul>
-
+    
     <h3>WINNING CRITERIA</h3>
     <ul>
-      <li>First to complete a line of 3 blocks wins</li>
-      <li>Wrong answer = lost turn</li>
+        <li>First to complete a line of 3 blocks wins</li>
+        <li>Wrong answer = lost turn</li>
     </ul>
-
+    
     <h3>GENERAL RULES</h3>
     <ul>
-      <li>No changing chosen cube after selection</li>
+        <li>No changing chosen cube after selection</li>
       <li>No external help allowed</li>
       <li>Judges’ decision final</li>
     </ul>
-
+    
         <div class="popup-buttons">
             <button class="popup-btn" onclick="closeHumanBingo()">Close</button>
             <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
@@ -2238,40 +2555,39 @@
 <!-- SPUD GUN TEMPLATE -->
 <template id="spudGunTemplate">
     <div class="popup-left">
-       <h2>TREASURE HUNT</h2>
-    <p>
-      The jungle hides secrets across the campus. Decode clues, solve riddles,
-      race against time — only the cleverest explorers claim the treasure.
-    </p>
-
-    <h3>TEAM DETAILS</h3>
-    <ul>
-      <li>Team Size: 3–4 members</li>
-      <li>One phone allowed per team</li>
-      <li>No external assistance</li>
-    </ul>
-
-    <h3>EVENT FORMAT</h3>
-    <ul>
-      <li>Multiple clue-based rounds</li>
-      <li>Each clue leads to a hidden location</li>
-      <li>QR / puzzle / riddle unlocking next step</li>
-      <li>Slowest teams eliminated per round</li>
-    </ul>
-
-    <h3>WINNING CRITERIA</h3>
-    <ul>
-      <li>First team to reach final treasure wins</li>
-      <li>Time tracked for tie-breaker</li>
-    </ul>
-
-    <h3>GENERAL RULES</h3>
-    <ul>
-      <li>No damaging campus property</li>
-      <li>Stay within event boundaries</li>
-      <li>Fair play mandatory</li>
-    </ul>
-
+        <h2>SPUD GUN</h2>
+        <p>
+            A lighthearted target-hitting challenge.  
+            Simple, safe, and purely for fun.
+        </p>
+        
+        <h3>PARTICIPATION</h3>
+        <ul>
+            <li>Solo event</li>
+            <li>Open for all students</li>
+        </ul>
+        
+        <h3>GAME FORMAT</h3>
+        <ul>
+            <li>Each participant gets 3 chances</li>
+            <li>Aim and hit the target</li>
+        <li>Higher accuracy = better score</li>
+        </ul>
+        
+        <h3>EVENT NATURE</h3>
+        <ul>
+        <li>Non-competitive fun activity</li>
+        <li>No elimination rounds</li>
+        <li>Pure entertainment zone</li>
+        </ul>
+        
+        <h3>GENERAL RULES</h3>
+        <ul>
+        <li>Only organizers handle the launcher</li>
+        <li>Safety distance must be maintained</li>
+        <li>Organizers’ decision final</li>
+        </ul>
+        
 
         <div class="popup-buttons">
             <button class="popup-btn" onclick="closeSpudGun()">Close</button>
@@ -2338,15 +2654,14 @@ Air is forced beneath the craft using an electric fan to create lift, while a se
 <template id="goKartsTemplate">
     <div class="popup-left">
 
-        <h2>GO KARTS</h2>
+        <h2>Buggy Showcase</h2>
 
         <p>
-            Go Karts is a high-adrenaline racing event where participants compete in
-            solo races to showcase their driving skills, control, and speed on a
-            specially designed track.
+           In this event, a custom-built buggy is presented exclusively for showcase purposes. The focus of the event is on displaying the buggy’s design, engineering, and build quality rather than public participation or testing. The vehicle is not open for test drives to ensure safety and to maintain the integrity of the showcase.
+A fixed and authorized team member conducts a controlled drive trial to demonstrate the buggy’s basic movement, handling, and stability on a designated path. This limited demonstration allows the audience to observe the buggy’s performance while ensuring complete safety and supervision. The event highlights our team’s technical expertise, innovation, and careful approach to vehicle demonstration, making it both informative and visually engaging.
         </p>
 
-        <h3>PARTICIPATION DETAILS</h3>
+        <!-- <h3>PARTICIPATION DETAILS</h3>
         <ul>
             <li><strong>Solo event</strong>.</li>
             <li>Each participant will be provided with a go-kart.</li>
@@ -2377,11 +2692,11 @@ Air is forced beneath the craft using an electric fan to create lift, while a se
         <ul>
             <li>Winner is decided based on minimum lap time.</li>
             <li>In case of tie, an additional lap may be conducted.</li>
-        </ul>
+        </ul> -->
 
         <div class="popup-buttons">
             <button class="popup-btn" onclick="closeGoKarts()">Close</button>
-            <button class="popup-btn primary" onclick="navigateTo('register')">Register</button>
+            <!-- <button class="popup-btn primary" onclick="navigateTo('register')">Register</button> -->
         </div>
 
     </div>
@@ -2575,8 +2890,7 @@ Air is forced beneath the craft using an electric fan to create lift, while a se
         </div>
     </footer>
 
-    <div class="sound-toggle">AUDIO [OFF]</div>
-
+    
 
 </body>
 </html>

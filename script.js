@@ -388,3 +388,43 @@ function closePopupById(popupId) {
     popup.innerHTML = "";
     document.body.classList.remove("popup-open");
 }
+
+window.addEventListener("click", () => {
+  const music = document.getElementById("bg-music");
+  music.volume = 0.4;   // soft jungle vibe
+  music.play();
+}, { once: true });
+
+
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("soundToggle");
+
+// Try autoplay on load
+window.addEventListener("load", () => {
+  music.volume = 0.35;
+  music.play().then(() => {
+    btn.innerText = "🔊 Sound On";
+  }).catch(() => {
+    // If browser blocks autoplay → wait for first click
+    btn.innerText = "▶ Tap to enable sound";
+  });
+});
+
+// Toggle button
+function toggleSound(){
+  if(music.paused){
+    music.play();
+    btn.innerText = "🔊 Sound On";
+  } else {
+    music.pause();
+    btn.innerText = "🔇 Sound Off";
+  }
+}
+
+// If autoplay was blocked → first user click starts sound
+document.addEventListener("click", () => {
+  if(music.paused){
+    music.play();
+    btn.innerText = "🔊 Sound On";
+  }
+}, { once:true });
