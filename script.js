@@ -391,7 +391,7 @@ function closePopupById(popupId) {
 
 window.addEventListener("click", () => {
   const music = document.getElementById("bg-music");
-  music.volume = 0.4;   // soft jungle vibe
+  music.volume = 0.25;   // soft jungle vibe
   music.play();
 }, { once: true });
 
@@ -401,7 +401,7 @@ const btn = document.getElementById("soundToggle");
 
 // Try autoplay on load
 window.addEventListener("load", () => {
-  music.volume = 0.35;
+  music.volume = 0.25;
   music.play().then(() => {
     btn.innerText = "🔊 Sound On";
   }).catch(() => {

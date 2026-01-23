@@ -270,8 +270,12 @@
 
         .btn-primary { background: var(--color-primary); color: #000; border: 2px solid var(--color-primary); box-shadow: 0 0 30px rgba(234,179,8,0.4); }
         .btn-primary:hover { background: transparent; color: var(--color-primary); box-shadow: 0 0 50px rgba(234,179,8,0.6); text-shadow: 0 0 10px var(--color-primary); }
-        .btn-secondary { background: transparent; color: #34d399; border: 2px solid #10b981; }
-        .btn-secondary:hover { background: rgba(6,78,59,0.5); color: #d1fae5; box-shadow: 0 0 30px rgba(16,185,129,0.3); }
+        .btn-secondary { background: var(--color-primary); color: #000; border: 2px solid var(--color-primary); box-shadow: 0 0 30px rgba(234,179,8,0.4); }
+        .btn-secondary:hover { background: transparent; color: var(--color-primary); box-shadow: 0 0 50px rgba(234,179,8,0.6); text-shadow: 0 0 10px var(--color-primary); }
+.btn-secondary a {
+    text-decoration: none;
+    color: inherit; /* Takes button text color */
+}
 
         /* countdown */
         .countdown-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:20px; max-width:800px; margin:4rem auto; }
@@ -1075,4 +1079,47 @@ body.popup-open {
 .sound-toggle:hover {
   background:#eab308;
   color:#000;
+}
+
+.sponsor-card {
+  background: rgba(0,0,0,0.85);
+  border: 2px solid #ffdc41;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 260px;        /* fixed width */
+  height: 230px;       /* fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255,220,65,0.4);
+  transition: 0.3s ease;
+}
+
+.sponsor-card img {
+  max-width: 180px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.sponsor-card h3 {
+  color: #ffdc41;
+  margin-bottom: 5px;
+}
+
+.sponsor-card p {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,220,65,0.8);
+}
+
+.sponsor-link {
+  text-decoration: none;
+  color: #ffdc41;
 }

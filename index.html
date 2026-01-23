@@ -46,7 +46,8 @@
             <a onclick="navigateTo('events')" data-target="events">Levels</a>
             <a onclick="navigateTo('about')" data-target="about">The Legend</a>
             <a onclick="navigateTo('team')" data-target="team">Guardians</a>
-            <a onclick="navigateTo('register')" data-target="register">Enter The Game</a>
+            <a onclick="navigateTo('sponsors')" data-target="sponsor">Allies</a>
+            <!-- <a onclick="navigateTo('register')" data-target="register">Enter The Game</a> -->
             <a onclick="navigateTo('contact')" data-target="contact">Signal</a>
         </div>
 
@@ -60,7 +61,8 @@
         <a onclick="navigateTo('events')">Levels</a>
         <a onclick="navigateTo('about')">The Legend</a>
         <a onclick="navigateTo('team')">Guardians</a>
-        <a onclick="navigateTo('register')">Enter The Game</a>
+        <a onclick="navigateTo('sponsors')">Allies</a>
+        <!-- <a onclick="navigateTo('register')">Enter The Game</a> -->
         <a onclick="navigateTo('contact')">Signal</a>
     </div>
 
@@ -74,8 +76,8 @@
                 <p class="hero-text">THE JUNGLE IS CALLING. DO YOU DARE TO ENTER?</p>
 
                 <div class="hero-buttons">
-                    <button class="btn-primary" onclick="navigateTo('register')">ENTER THE GAME</button>
-                    <button class="btn-secondary" onclick="navigateTo('about')">READ THE RULES</button>
+                    <button class="btn-primary" onclick="navigateTo('events')">ENTER THE GAME</button>
+                    <button class="btn-secondary" ><a href="https://heyzine.com/flip-book/b95fc5ff5c.html" target="_blank" >READ THE RULES</a></button>
                 </div>
             </div>
 
@@ -263,11 +265,11 @@
         ...existing code... -->
         <!-- ```// filepath: d:\(coding)Dhruv\AADHAR\JumanjiAadhar-main\JumanjiAadhar-main\client\public\vanilla\index.html -->
         <!-- ...existing code... -->
-        <section id="register" class="page">
+        <!-- <section id="register" class="page">
             <h1 class="comingsoon" style="text-align: center;margin-top: 230px; color: #ffdc41;">"The drums are beating... the gates will open soon."</h1>
             <p class="comingsoon" style="text-align: center; color: #ffdc41;">"Stay tuned for registration launch-AADHAR XIV"</p>
             <button class="btn-primary" style="display: block; margin: 20px auto;" onclick="navigateTo('events')">BACK TO LEVELS</button>
-          <!-- <div style="max-width:900px;margin:0 auto;background:rgba(0,0,0,0.85);border:1px solid #065f46;padding:2.5rem;">
+          <div style="max-width:900px;margin:0 auto;background:rgba(0,0,0,0.85);border:1px solid #065f46;padding:2.5rem;"> 
             <h2 style="color:var(--color-primary);text-align:center;font-size:2rem;margin-bottom:1rem;">ENTER THE GAME</h2>
             <p style="text-align:center;color:var(--color-text-muted);margin-bottom:1rem;">Select event, fill leader & college details. Member fields appear per event.</p>
         
@@ -364,8 +366,8 @@
         
             
             </form>
-          </div> -->
-        </section>
+          </div> 
+        </section>-->
         
         <!-- <script>
           function showPoornimaOrOther() {
@@ -441,6 +443,52 @@
           });
         </script> -->
 
+<!-- SPONSORS PAGE -->
+<section id="sponsors" class="page">
+
+  <h1 class="comingsoon" style="text-align:center; margin-top:40px; color:#ffdc41;">
+  "Our Esteemed Partners"
+</h1>
+
+<p class="comingsoon" style="text-align:center; color:#ffdc41; margin-bottom:40px;">
+  Powering the journey of AADHAR XIV
+</p>
+
+<<div style="max-width:1000px; margin:0 auto; display:flex; justify-content:center; align-items:center; gap:40px; flex-wrap:wrap;">
+
+  <!-- Secure With Techies -->
+  <div class="sponsor-card">
+    <img src="secure-with-techies-logo.jpeg" alt="Secure With Techies">
+    <h3>
+      <a href="https://securewithtechies.com" target="_blank" class="sponsor-link">
+        Secure With Techies
+      </a>
+    </h3>
+    <p>Official Event Partner</p>
+  </div>
+
+  <!-- Unstop -->
+  <div class="sponsor-card">
+    <img src="unstop-logo.png" alt="Unstop">
+    <h3 class="sponsor-link">Unstop</h3>
+    <p>Official Platform Partner</p>
+  </div>
+
+</div>
+
+
+
+  <!-- Open for Sponsors -->
+  <div style="text-align:center; margin-top:40px; color:#ffdc41;">
+    <h3>We are open for sponsorships</h3>
+    <p>Join us in powering Rajasthan’s biggest student tech adventure.</p>
+    <button style="text-align:center; margin-top:30px;" class="btn-secondary" onclick="window.location.href='mailto:aadharxiv@poornima.org'">
+      Become a Sponsor
+    </button>
+  </div>
+
+</section>
+
 
         <!-- ABOUT -->
         <section id="about" class="page">
@@ -486,9 +534,9 @@
         <span class="event-type">ROBOTICS</span>
         <h3>ROBO WAR</h3>
         <p>Design and battle powerful robots in a combat arena.</p>
-        <p class="members">Members: 5–10</p>
+        <p class="members">Members: 3-5<br>Registration Fee: ₹800 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/robo-war-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627133', '_blank')">Join</button>
           <button class="join-btn" onclick="openRoboWar()">Explore</button>
         </div>
       </div>
@@ -497,9 +545,9 @@
         <span class="event-type">ROBOTICS</span>
         <h3>ROBO SOCCER</h3>
         <p>Score goals with your custom-built robot.</p>
-        <p class="members">Members: 3–5</p>
+        <p class="members">Members: 3–5<br>Registration Fee: ₹600 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/robo-soccer-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627864', '_blank')">Join</button>
           <button class="join-btn" onclick="openRoboSoccer()">Explore</button>
         </div>
       </div>
@@ -508,9 +556,9 @@
         <span class="event-type">ROBOTICS</span>
         <h3>R.C CAR</h3>
         <p>Design and race your remote-controlled car.</p>
-        <p class="members">Members: 2–4</p>
+        <p class="members">Members: 2–4<br>Registration Fee: ₹400 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/rc-car-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627872', '_blank')">Join</button>
           <button class="join-btn" onclick="openRCCar()">Explore</button>
         </div>
       </div>
@@ -519,9 +567,9 @@
         <span class="event-type">ROBOTICS</span>
         <h3>COZMO CLENCH</h3>
         <p>Fun interactive robotic gripping challenge.</p>
-        <p class="members">Members: 2–4</p>
+        <p class="members">Members: 2–4<br>Registration Fee: ₹400 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/cozmo-clench-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627887', '_blank')">Join</button>
           <button class="join-btn" onclick="openCozmoClench()">Explore</button>
         </div>
       </div>
@@ -530,9 +578,9 @@
         <span class="event-type">ROBOTICS</span>
         <h3>LINE FOLLOWER</h3>
         <p>Autonomous robot path tracking challenge.</p>
-        <p class="members">Members: 1–2</p>
+        <p class="members">Members: 1–2<br>Registration Fee: ₹200 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/line-follower-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627898', '_blank')">Join</button>
           <button class="join-btn" onclick="openLineFollower()">Explore</button>
         </div>
       </div>
@@ -541,9 +589,10 @@
         <span class="event-type">OPEN INNOVATION</span>
         <h3>OPEN INNOVATION</h3>
         <p>Showcase your creative tech ideas.</p>
-        <p class="members">Members: 4–6</p>
+        <p class="members">Members: 2-4<br>Registration Fee:<br>Hardware: ₹200 per team<br>Software: ₹300 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/open-innovation-software-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628002', '_blank')">Join Software</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/open-innovation-hardware-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1627996', '_blank')">Join Hardware</button>
           <button class="join-btn" onclick="openOpenInnovation()">Explore</button>
         </div>
       </div>
@@ -562,7 +611,6 @@
         <p>Build and race a hovercraft.</p>
         <p class="members">Members: 4</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
           <button class="join-btn" onclick="openHovercraft()">Explore</button>
         </div>
       </div>
@@ -596,9 +644,9 @@
         <span class="event-type">TECH QUIZ</span>
         <h3>TECH QUIZ</h3>
         <p>Test your tech knowledge.</p>
-        <p class="members">Members: 2-4</p>
+        <p class="members">Members: 2-4<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/tech-quiz-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628011', '_blank')">Join</button>
           <button class="join-btn" onclick="openTechQuiz()">Explore</button>
         </div>
       </div>
@@ -607,9 +655,9 @@
         <span class="event-type">FLASH DESIGN</span>
         <h3>FLASH DESIGN</h3>
         <p>UI/UX design under time pressure.</p>
-        <p class="members">Members: 2-4</p>
+        <p class="members">Members: 2-4<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/flash-design-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628015', '_blank')">Join</button>
           <button class="join-btn" onclick="openFlashDesign()">Explore</button>
         </div>
       </div>
@@ -627,9 +675,9 @@
         <span class="event-type">E-SPORTS</span>
         <h3>BGMI</h3>
         <p>Battle royale squad combat.</p>
-        <p class="members">Members: 3–4</p>
+        <p class="members">Members: 3–4<br>Registration Fee: ₹200 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/bgmi-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628019', '_blank')">Join</button>
           <button class="join-btn" onclick="openBGMI()">Explore</button>
         </div>
       </div>
@@ -638,9 +686,9 @@
         <span class="event-type">E-SPORTS</span>
         <h3>FREE FIRE</h3>
         <p>Fast-paced survival battles.</p>
-        <p class="members">Members: 3–4</p>
+        <p class="members">Members: 3–4<br>Registration Fee: ₹200 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/free-fire-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628026', '_blank')">Join</button>
           <button class="join-btn" onclick="openFreeFire()">Explore</button>
         </div>
       </div>
@@ -649,9 +697,9 @@
         <span class="event-type">E-SPORTS</span>
         <h3>VALORANT</h3>
         <p>Tactical 5v5 agent combat.</p>
-        <p class="members">Members: 5</p>
+        <p class="members">Members: 5<br>Registration Fee: ₹250 per team</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/valorant-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628027', '_blank')">Join</button>
           <button class="join-btn" onclick="openValorant()">Explore</button>
         </div>
       </div>
@@ -668,9 +716,9 @@
         <span class="event-type">WORKSHOP</span>
         <h3>CANVA DESIGN</h3>
         <p>Hands-on design workshop.</p>
-        <p class="members">Members: Solo</p>
+        <p class="members">Members: Solo<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/canva-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628014', '_blank')">Join</button>
           <button class="join-btn" onclick="openCanvaWorkshop()">Explore</button>
         </div>
       </div>
@@ -687,9 +735,8 @@
         <span class="event-type">FUN EVENT</span>
         <h3>JUMANJI BOARD</h3>
         <p>Life-sized jungle board adventure.</p>
-        <p class="members">Members: 3–5</p>
+        <p class="members">Members: 3–5<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
           <button class="join-btn" onclick="openJumanjiBoard()">Explore</button>
         </div>
       </div>
@@ -698,9 +745,9 @@
         <span class="event-type">ADVENTURE</span>
         <h3>TREASURE HUNT</h3>
         <p>Crack clues across campus.</p>
-        <p class="members">Members: 3–4</p>
+        <p class="members">Members: 3–4<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
+          <button class="join-btn" onclick="window.open('https://unstop.com/p/treasure-hunt-aadhar-xiv-poornima-college-of-engineering-pec-jaipur-1628030', '_blank')">Join</button>
           <button class="join-btn" onclick="openTreasureHunt()">Explore</button>
         </div>
       </div>
@@ -709,9 +756,8 @@
         <span class="event-type">FUN GAME</span>
         <h3>HUMAN BINGO</h3>
         <p>Answer, claim cubes, make a line.</p>
-        <p class="members">Members: 2 Players</p>
+        <p class="members">Members: 2 Players<br>Registration Fee: Free</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
           <button class="join-btn" onclick="openHumanBingo()">Explore</button>
         </div>
       </div>
@@ -720,9 +766,8 @@
         <span class="event-type">FUN ZONE</span>
         <h3>SPUD GUN</h3>
         <p>Hit the target in 3 chances.</p>
-        <p class="members">Members: Solo</p>
+        <p class="members">Members: Solo<br>Registration Fee: ₹50 per game</p>
         <div class="btn-row">
-          <button class="join-btn" onclick="navigateTo('register')">Join</button>
           <button class="join-btn" onclick="openSpudGun()">Explore</button>
         </div>
       </div>
@@ -732,30 +777,7 @@
 
 </section>
 
-
-
-       
-
-        <!-- <section id="events" class="page">
-  <h1 class="section-header">CHOOSE YOUR LEVEL</h1>
-<section > -->
-  <!-- ALL CLUB HEADERS + events-grid GO INSIDE HERE -->
-
-  <!-- <div class="levels-wrapper">
-      Zircon Club
-      <h2 class="group-header">Zircon Club</h2>
-      robo soccer start
-      <div class="events-grid">
-          <div class="event-card">
-              <span class="event-type">ROBOTICS</span>
-                <h3>ROBO WAR</h3>
-                <p>Design and battle powerful robots in a high-intensity combat arena</p>
-                <p class="members">Members: 15</p>
-                <div style="display:flex; gap:10px;">
-                    <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                    <button class="join-btn" onclick="openRoboWar()">Explore</button>
-                </div>
-            </div> -->
+        <!-- ================= POPUP TEMPLATES & OVERLAYS ================= -->
             
             <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
             <template id="roboSoccerTemplate">
@@ -773,7 +795,7 @@
                         <li>Each team leader must assign one team leader for official communication.</li>
                     </ul>
                     
-                    <h3>MATCH STRUCTURE (Rounds)</h3>
+                    <h3>ROBOT SPECIFICATIONS</h3>
                     <ul>
                         <li>Robots must be wireless controlled.</li>
                         <li>Robots must fit within <strong>30 × 30 × 30 cm³</strong>.</li>
@@ -781,16 +803,18 @@
                         <li>Robots must be powered by onboard batteries only.</li>
                     </ul>
                     
-                    <h3>ROBOT SPECIFICATIONS</h3>
+                    <h3>MATCH STRUCTURE (Rounds)</h3>
                     <ul>
                         <strong>ROUND 1 – QUALIFYING ROUND</strong>
-                        <li>All teams compete in league or knockout form.</li>
-                        <li>Matches are scheduled by organizers.</li>
-                        <li>Teams earn points based on match results.</li>
-                        
-                        <strong>ROUND 3 – FINALS</strong>
-                        <li>Winners of semifinals compete.</li>
-                        <li>Matches decide 1<sup>st</sup> and 2<sup>nd</sup> places.</li>
+            <li>All teams participate in knockout matches.</li>
+            <li>Match duration: 3 minutes.</li>
+
+            <strong>ROUND 2 – SEMI FINALS</strong>
+            <li>Top teams qualify based on performance.</li>
+            <li>Higher aggression and control are evaluated.</li>
+
+            <strong>ROUND 3 – FINALS</strong>
+            <li>Final combat determines 1<sup>st</sup> and 2<sup>nd</sup> positions.</li>
                     </ul>
                     
                     <!-- <h3>SCORING SYSTEM</h3>
@@ -880,7 +904,7 @@
 
         <h3>TEAM COMPOSITION</h3>
         <ul>
-            <li>Each team may consist of 5 – 10 members.</li>
+            <li>Each team may consist of 3-5 members.</li>
             <li>Only one robot is allowed per team.</li>
             <li>Each team must assign one leader for official communication.</li>
         </ul>
@@ -1066,7 +1090,7 @@
                 </div>
                 
                 <div class="popup-right">
-                    <img src="./event/rc car.jpeg" alt="RC Car">
+                    <img src="./event/rc car.jpg" alt="RC Car">
                 </div>
                 
             </template>
@@ -1308,7 +1332,7 @@
 
         <h3>TEAM FORMATION</h3>
         <ul>
-            <li>Each team must consist of <strong>4 – 6 members</strong>.</li>
+            <li>Each team must consist of <strong>2-4 members</strong>.</li>
             <li>Inter-disciplinary teams are allowed and encouraged.</li>
             <li>Inter-college team formation is <strong>not allowed</strong>.</li>
         </ul>
@@ -1383,67 +1407,13 @@
 
 </div>
 
-<!-- ================= UDAAN CLUB ================= -->
-<!-- <h2 class="group-header">Udaan Club</h2>
-<div class="events-grid single">
-    
-    <div class="event-card">
-        <span class="event-type">HOVERCRAFT</span>
-        <h3>HOVERCRAFT</h3>
-        <p>Build and race a hovercraft.</p>
-        <p class="members">Members: 4</p>
-        <div class="btn-row">
-            <button class="join-btn" onclick="navigateTo('register')">Join</button>
-            <button class="join-btn" onclick="openHovercraft()">Explore</button>
-        </div>
-    </div>
-    
-</div>
-</div> -->
-
-<!-- ================= HAYAGRIVA CLUB ================= -->
-  <!-- <div class="levels-wrapper">
-      <h2 class="group-header">Hayagriva Club</h2>
-      <div class="events-grid">
-          
-          <div class="event-card single">
-              <span class="event-type">GO KARTS</span>
-              <h3>GO KARTS</h3>
-              <p>Show off your driving skills.</p>
-              <p class="members">Members: Solo</p>
-              <div class="btn-row">
-                  <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                  <button class="join-btn" onclick="openGoKarts()">Explore</button>
-                </div>
-            </div>
-            
-        </div>
-    </div>     -->
-
-<!-- ================= CODING CLUB ================= -->
-  <!-- <div class="levels-wrapper">
-      <h2 class="group-header">Coding Club</h2>
-      
-      <div class="events-grid ">
-          
-          <div class="event-card">
-              <span class="event-type">TECH QUIZ</span>
-       <h3>TECH QUIZ</h3>
-        <p>Test your tech knowledge in a fast-paced quiz.</p>
-        <p class="members">Members: Solo</p>
-    <div style="display:flex; gap:10px;">
-         <button class="join-btn" onclick="navigateTo('register')">Join</button>
-        <button class="join-btn" onclick="openTechQuiz()">Explore</button>
-    </div>
-</div> -->
-
 <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
 <template id="techQuizTemplate">
 
     <div class="popup-left">
 
         <h2>TECH QUIZ</h2>
-        <p>A thrilling robotic football challenge where your bot pushes, hits, and scores goals with precision & power!</p>
+        <p>Sharpen your mind, trust your instincts, and conquer the ultimate Tech Quiz challenge!</p>
 
         <h3>TEAM COMPOSITIONS</h3>
         <ul>
@@ -1713,67 +1683,6 @@
             <!-- flash design end -->
             
 
-        <!-- ================= GDES CLUB ================= -->
-
-<!-- ================= GDE CLUB ================= -->
-<!-- <div class="levels-wrapper">
-    <h2 class="group-header">GDE Club</h2>
-
-    <div class="events-grid">
-
-        BGMI
-        <div class="event-card">
-            <span class="event-type">E-SPORTS</span>
-            <h3>BGMI</h3>
-            <p>Play intense battle royale matches with your squad.</p>
-            <p class="members">Members: 3–4</p>
-            <div style="display:flex; gap:10px;">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openBGMI()">Explore</button>
-            </div>
-        </div>
-
-        FREE FIRE
-        <div class="event-card">
-            <span class="event-type">E-SPORTS</span>
-            <h3>FREE FIRE</h3>
-            <p>Fast-paced survival shooting battles.</p>
-            <p class="members">Members: 3–4</p>
-            <div style="display:flex; gap:10px;">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openFreeFire()">Explore</button>
-            </div>
-        </div>
-
-        VALORANT
-        <div class="event-card">
-            <span class="event-type">E-SPORTS</span>
-            <h3>VALORANT</h3>
-            <p>Tactical 5v5 combat with agents.</p>
-            <p class="members">Members: 5</p>
-            <div style="display:flex; gap:10px;">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openValorant()">Explore</button>
-            </div>
-        </div>
-
-    </div> ✅ CLOSE events-grid
-</div>     ✅ CLOSE levels-wrapper -->
-
-<!-- <div class="levels-wrapper">
-    <h2 class="group-header">GDE Club</h2>
-
-    <div class="events-grid">
-        <div class="event-card">
-            <span class="event-type">E-SPORTS</span>
-        <h3>BGMI</h3>
-        <p>Play intense battle royale matches with your squad and fight for victory.</p>
-        <p class="members">Members: 3-4</p>
-    <div style="display:flex; gap:10px;">
-         <button class="join-btn" onclick="navigateTo('register')">Join</button>
-        <button class="join-btn" onclick="openBGMI()">Explore</button>
-    </div>
-</div> -->
 
 <!-- ✅ MOVED OUT: template must NOT be inside event-card -->
 <template id="BGMITemplate">
@@ -2336,63 +2245,7 @@
 
 <br>
             
-        <!-- ================= OTHER ACTIVITIES ================= -->
-<!-- <div class="levels-wrapper">
-    <h2 class="group-header">Other Activities</h2>
-
-    <div class="events-grid">
-
-        JUMANJI BOARD
-        <div class="event-card">
-            <span class="event-type">FUN EVENT</span>
-            <h3>JUMANJI BOARD</h3>
-            <p>Step into a life-sized adventure board filled with challenges and surprises.</p>
-            <p class="members">Members: 3–5</p>
-            <div class="btn-row">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openJumanjiBoard()">Explore</button>
-            </div>
-        </div>
-
-        TREASURE HUNT
-        <div class="event-card">
-            <span class="event-type">ADVENTURE</span>
-            <h3>TREASURE HUNT</h3>
-            <p>Crack clues, solve puzzles, and race to uncover the hidden treasure.</p>
-            <p class="members">Members: 3–4</p>
-            <div class="btn-row">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openTreasureHunt()">Explore</button>
-            </div>
-        </div>
-
-        HUMAN BINGO
-        <div class="event-card">
-            <span class="event-type">FUN GAME</span>
-            <h3>HUMAN BINGO</h3>
-            <p>Complete real-life tasks and fill your bingo card before anyone else.</p>
-            <p class="members">Members: Solo</p>
-            <div class="btn-row">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openHumanBingo()">Explore</button>
-            </div>
-        </div>
-
-        SPUD GUN
-        <div class="event-card">
-            <span class="event-type">MECHANICAL</span>
-            <h3>SPUD GUN</h3>
-            <p>Build and operate a potato launcher to hit targets with precision.</p>
-            <p class="members">Members: 2–3</p>
-            <div class="btn-row">
-                <button class="join-btn" onclick="navigateTo('register')">Join</button>
-                <button class="join-btn" onclick="openSpudGun()">Explore</button>
-            </div>
-        </div>
-
-    </div>
-</div> -->
-
+      
 <!-- JUMANJI BOARD TEMPLATE -->
 <template id="jumanjiBoardTemplate">
     <div class="popup-left">
@@ -2926,6 +2779,24 @@ A fixed and authorized team member conducts a controlled drive trial to demonstr
     <footer>
         <div class="footer-content">
             <div class="footer-section">
+                <h3>THE ADVENTURE</h3>
+                <p>AADHAR is the annual tech event of Poornima College, where students venture into the digital jungle to showcase their skills, creativity, and innovation.</p><br><br><br><br><br>
+                <p style="font-size: small;">Supported by Dhruv Mathur</p>
+
+            </div>
+            
+
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <a onclick="navigateTo('home')">Home</a>
+                <!-- <a onclick="navigateTo('register')">Register</a> -->
+                <a onclick="navigateTo('events')">Events</a>
+                <a onclick="navigateTo('sponsors')">Allies</a>
+                <a onclick="navigateTo('about')">About</a>
+                <a onclick="navigateTo('team')">Team</a>
+                <a onclick="navigateTo('contact')">Contact</a>
+            </div>
+           <div class="footer-section">
                 <h3>CONTACT HQ</h3>
 
                 <a href="mailto:zircon.aadhar@poornima.org" class="footer-link">
@@ -2947,19 +2818,6 @@ A fixed and authorized team member conducts a controlled drive trial to demonstr
                 </a>
             </div>
  
-
-            <div class="footer-section">
-                <h3>QUICK LINKS</h3>
-                <a onclick="navigateTo('home')">Home</a>
-                <a onclick="navigateTo('register')">Register</a>
-                <a onclick="navigateTo('events')">Events</a>
-                <a onclick="navigateTo('about')">About</a>
-                <a onclick="navigateTo('team')">Team</a>
-            </div>
-            <div class="footer-section">
-                <h3>THE ADVENTURE</h3>
-                <p>AADHAR is the annual tech event of Poornima College, where students venture into the digital jungle to showcase their skills, creativity, and innovation.</p>
-            </div>
         </div>
         <div class="footer-bottom">
             <p>© 2026 AADHAR XIV. May the best player win.</p>
