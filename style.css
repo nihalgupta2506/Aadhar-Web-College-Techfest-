@@ -359,6 +359,147 @@
 }
 
 
+/*hackathon card*/
+/* ===== Wrapper (Center Card) ===== */
+.hackathon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+/* ===== Main Card ===== */
+.hackathon-card {
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+
+    background-color:rgba(0,0,0,0.8);
+
+    border-radius: 20px;
+    padding: 2rem;
+    min-height: 260px;
+    position: relative;
+
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.4s ease;
+}
+
+/* ===== Neon Glow Border ===== */
+.hackathon-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(6px);
+    transition: opacity 0.4s ease;
+}
+
+/* ===== Hover Effect ===== */
+.hackathon-card:hover {
+    transform: translateY(-10px) scale(1.04);
+
+}
+
+.hackathon-card:hover::before {
+    opacity: 1;
+}
+
+/* ===== Hackathon Type Badge ===== */
+.hackathon-type {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(16,185,129,0.18);
+    color: #34d399;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0 8px rgba(16,185,129,0.4);
+}
+
+/* ===== Title ===== */
+.hackathon-card h3 {
+    font-size: 1.8rem;
+    color: #eab308;
+    margin-bottom: 0.6rem;
+    text-shadow: 0 0 18px rgba(234,179,8,0.45);
+}
+
+/* ===== Description ===== */
+.hackathon-card p {
+    color: #a7f3d0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===== Info Section ===== */
+.hackathon-info {
+    margin-top: 1rem;
+}
+
+.hackathon-info p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Button ===== */
+
+/* Buttons container */
+.hackathon-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Common button style (Explore + Join) */
+.hackathon-btn {
+    padding: 10px 26px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #10b981, #eab308);
+    color: #020617;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.hackathon-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(234,179,8,0.6);
+}
+
+/* Join button (slightly different glow for highlight) */
+.join-btn {
+    background: linear-gradient(90deg, #eab308, #10b981);
+}
+
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+    .hackathon-card {
+        max-width: 92%;
+        padding: 1.5rem;
+    }
+
+    .hackathon-card h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
 /* Two-column about section → single column */
 @media (max-width: 900px) {
   div[style*="grid-template-columns"] {

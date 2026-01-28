@@ -257,6 +257,14 @@ function closeOpenInnovation() {
     closePopup("openInnovationPopup");
 }
 
+// 12 hours hackathon
+function openhackathon() {
+    openPopup("hackathonPopup", "hackathonTemplate");
+}
+function closehackathon() {
+    closePopup("hackathonPopup");
+}
+
 // Tech Quiz
 function openTechQuiz() {
     openPopup("techQuizPopup", "techQuizTemplate");
@@ -351,6 +359,10 @@ function openCanvaWorkshop() {
 function closeCanvaWorkshop() {
     closePopup("canvaWorkshopPopup");
 }
+
+function openDetails() {
+    alert("Hackathon details coming soon 🚀");
+  }
 
 /* =====================================================
    OPTIONAL: CLICK OUTSIDE TO CLOSE
